@@ -44,7 +44,7 @@
         <h1>Bienvenidos a SWIDDI</h1>
         <h2>Aquí <span class="rotating">buscarás tu empleo, serás empleado</span></h2>
         <div class="actions">
-          <a href="https://www.facebook.com/" class="btn-get-started">Usuario</a>
+          <a href="http://localhost/SWIDDI/ControlUsuarios" class="btn-get-started">Usuario</a>
           <a href="" class="btn-services">Administrador</a>
         </div>
       </div>
