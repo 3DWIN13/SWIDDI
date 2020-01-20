@@ -29,7 +29,7 @@
 </head>
 <body>
     <!--el boton para pasar-->
-<a href="http://localhost/SWIDDI/ControlAdmin" class="btn btn-success">Entrar</a>
+
 <footer id="footer">
     <div class="container">
       <div class="row">
