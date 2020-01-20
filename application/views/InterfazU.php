@@ -60,7 +60,7 @@
         <div class="col-md-12">
           <h3 class="section-title">Busca tu trabajo ideal</h3>
           <div class="section-title-divider"></div>
-          <p class="section-description">selecciona algunas de las casillas para entrar mas en detalle</p>
+          <p class="section-description">Seleccione algunas de las casillas para entrar en más detalles</p>
         </div>
       </div>
 
