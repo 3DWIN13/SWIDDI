@@ -29,9 +29,9 @@
 </head>
 
 <body>
-  <div id="preloader"></div>
+  
 
-  <!--==========================
+  <!--==============<div id="preloader"></div>============
   Hero Section
   ============================-->
   <section id="hero">
@@ -41,11 +41,11 @@
           <img class="" src="img/logo.png" alt="Imperial">
         </div>
 
-        <h1>Bienbenidos a SWIDDI</h1>
+        <h1>Bienvenidos a SWIDDI</h1>
         <h2>Aquí <span class="rotating">buscarás tu empleo, serás empleado</span></h2>
         <div class="actions">
-          <a href="<?= base_url('votaciones');?>" class="btn-get-started">Usuario</a>
-          <a href="#services" class="btn-services">Administrador</a>
+          <a href="https://www.facebook.com/" class="btn-get-started">Usuario</a>
+          <a href="" class="btn-services">Administrador</a>
         </div>
       </div>
     </div>
@@ -108,7 +108,8 @@
   <script src="lib/easing/easing.js"></script>
 
   <!-- Template Specisifc Custom Javascript File -->
-  <script src="js/custom.js"></script>
+ 
+ <script src="js/custom.js"></script>
 
   <script src="contactform/contactform.js"></script>
 
