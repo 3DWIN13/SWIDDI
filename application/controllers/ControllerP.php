@@ -11,8 +11,10 @@ class ControllerP extends CI_Controller {
 	//	$this->load->model('ModelP');
 	}
 
-	function index()
+	public function index()
 	{
-		$this->load->view('inicio/index.html');
+		$this->load->view('inicio/index.php');
 	}
+
 }
+?>
