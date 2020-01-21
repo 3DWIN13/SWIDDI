@@ -43,7 +43,7 @@
 <input type="password"name="username" placeholder="Ingrese su contraseña">
 
 <!-- BOTON -->
-<input type="submit" value="Iniciar Sesion" src="http://localhost:/SWIDDI/login.php">
+<input type="submit" value="Iniciar Sesion" src="http://localhost:/SWIDDI/index.php">
 
 <a href="#">Olvidaste tu contraseña?</a><br>
 <a href="#">No tienes una cuenta?</a>
