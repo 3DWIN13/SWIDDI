@@ -28,6 +28,28 @@
 
 </head>
 <body>
+<div class="login-box">
+
+<h1>Login Here</h1>
+<form>
+
+<!-- USUARIO -->
+<label for="username">Usuario</label>
+<input type="text" placeholder="Ingrese su usuario">
+
+<!-- CONTRA -->
+<label for="password">Contraseña</label>
+<input type="password" placeholder="Ingrese su contraseña">
+
+<!-- BOTON -->
+<input type="submit" value="Iniciar Sesion">
+
+<a href="#">Olvidaste tu contraseña?</a>
+<a href="#">No tienes una cuenta?</a>
+
+</form>
+</div>
+<!--division--->
     <!--el boton para pasar-->
 
 <footer id="footer">
