@@ -45,7 +45,7 @@
 <!-- BOTON -->
 <input type="submit" value="Iniciar Sesion">
 
-<a href="#">Olvidaste tu contraseña?</a>
+<a href="#">Olvidaste tu contraseña?</a><br>
 <a href="#">No tienes una cuenta?</a>
 
 </form>
