@@ -78,7 +78,7 @@
   <!--==========================
   Footer
 ============================-->
-  <footer id="footer">
+  <footer id="footer1">
     <div class="container">
       <div class="row">
         <div class="col-md-12">
