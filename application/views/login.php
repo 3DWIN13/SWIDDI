@@ -26,14 +26,15 @@ $q = mysql_query($query,$con);
 
 try{
 
-    if(mysql_result($q,O))
-    {$result = mysql_result($q, O);
+    if(mysql_result($q,O)){
+    $result = mysql_result($q, O);
 
         echo "Usuario validado correctamente";
 
     }else{
         echo "Usuario con datos erroneos";
-    }catch(Exception $error){}
-    mysql_close($con);
-    ?>
-}
+     }
+} catch(Exception $error){
+    mysql_close($con);}
+
+
