@@ -52,7 +52,7 @@
 </div>
 <!--division--->
     <!--el boton para pasar-->
-
+<div>
 <footer id="footer">
     <div class="container">
       <div class="row">
@@ -68,6 +68,7 @@
       </div>
     </div>
   </footer>
+  </div>
   <!-- #footer -->
 
   <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
