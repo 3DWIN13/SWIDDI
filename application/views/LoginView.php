@@ -32,15 +32,15 @@
 <div class="login-box">
 
 <h1>Login Here</h1>
-<form>
+<form action="login.php" method="post">
 
 <!-- USUARIO -->
 <label for="username">Usuario</label>
-<input type="text" placeholder="Ingrese su usuario">
+<input type="text" name="username" placeholder="Ingrese su usuario">
 
 <!-- CONTRA -->
 <label for="password">Contraseña</label>
-<input type="password" placeholder="Ingrese su contraseña">
+<input type="password"name="username" placeholder="Ingrese su contraseña">
 
 <!-- BOTON -->
 <input type="submit" value="Iniciar Sesion">
