@@ -42,10 +42,10 @@
 
       <nav id="nav-menu-container">
         <ul class="nav-menu">
-          <li class="menu-active"><a href="#hero">inicio</a></li>
-          <li><a href="#about">Configuracion</a></li>
-          <li><a href="#services">Pagina de usuario</a></li>
-          <li><a href="#portfolio">salir</a></li>
+        <li class="menu-active"><a href="http://localhost/SWIDDI/ControlAdmin">inicio</a></li>
+          <li><a href="http://localhost/SWIDDI/ControlTrabajos">Crear Trabajos</a></li>
+          <li><a href="http://localhost/SWIDDI/ControlUsuarios">Pagina de usuario</a></li>
+          <li><a href="http://localhost/SWIDDI">salir</a></li>
         </ul>
       </nav>
       
