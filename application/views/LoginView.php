@@ -52,7 +52,24 @@
 </div>
 <!--division--->
     
-
+  <!--==========================
+  Footer
+============================-->
+<footer id="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="copyright">
+            &copy; Copyright <strong>ITLA GROUP</strong>. TODOS LOS DERECHOS ABIERTOS
+          </div>
+          <div class="credits">
+           
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
   <!-- #footer -->
 
   <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
