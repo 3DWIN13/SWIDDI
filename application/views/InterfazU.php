@@ -43,7 +43,7 @@
       <nav id="nav-menu-container">
         <ul class="nav-menu">
           <li class="menu-active"><a href="http://localhost/SWIDDI">inicio</a></li>
-          <li><a href="#">salir</a></li>
+          <li><a href="http://localhost/SWIDDI">salir</a></li>
         </ul>
       </nav>
       
