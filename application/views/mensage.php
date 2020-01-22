@@ -28,7 +28,7 @@
 </head>
 <body>
     <div class="container text-center">
-        <h3>Operacion completada</h3>
+        <h3>Operacion Completada</h3>
         <a href="http://localhost/SWIDDI/ControlTrabajos" class="btn btn-info" >Continuar</a>
     </div>
 </body>
