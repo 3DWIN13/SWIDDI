@@ -8,9 +8,13 @@ class Usuarios_model extends CI_Model {
         $this->db->where("password", $password);     
         
         $resultados = $this->db->get("admin");
-        if ($resultados){
+        if ($resultados->num_rows() > 0){
+
+            return $resultados->row();
 
         }
-
+        else{
+            return false;
+        }
     }
 }

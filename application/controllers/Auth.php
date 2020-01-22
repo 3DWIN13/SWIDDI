@@ -5,6 +5,7 @@ class Auth extends CI_Controller {
 
     public function __construct(){
         parent::__construct();
+        $this->load->model("Usuarios_model");
     }
 	public function index()
 	{
@@ -14,5 +15,6 @@ class Auth extends CI_Controller {
     public function login(){
         $username = $this->input->post("username");
         $password = $this->input->post("password");
+        $res = $this->Usuarios_model->login($username, $password);
     }
 }
