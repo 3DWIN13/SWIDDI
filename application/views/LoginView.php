@@ -36,14 +36,14 @@
 
 <!-- USUARIO -->
 <label for="username">Usuario</label>
-<input type="text" name="username" placeholder="Ingrese su usuario">
+<input type="text" name="username" id="username" placeholder="Ingrese su usuario">
 
 <!-- CONTRA -->
 <label for="password">Contraseña</label>
-<input type="password"name="username" placeholder="Ingrese su contraseña">
+<input type="password" name="password" id="password" placeholder="Ingrese su contraseña">
 
 <!-- BOTON -->
-<input type="submit" value="Iniciar Sesion" src="http://localhost/SWIDDI/login.php">
+<input type="submit" value="Iniciar Sesion">
 
 <a href="#">Olvidaste tu contraseña?</a><br>
 <a href="#">No tienes una cuenta?</a>
