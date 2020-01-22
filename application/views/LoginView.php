@@ -34,7 +34,7 @@
 <h1>Login Here</h1>
 <form action="" method="POST">
 
-<!-- USUARIO -->s
+<!-- USUARIO -->
 <label for="username">Usuario</label>
 <input type="text" name="username" id="username" placeholder="Ingrese su usuario">
 
@@ -43,7 +43,9 @@
 <input type="password" name="password" id="password" placeholder="Ingrese su contraseña">
 
 <!-- BOTON -->
-<input type="submit" value="Iniciar Sesion">
+
+<input type="submit"  value="Iniciar Sesion">
+
 
 <a href="#">Olvidaste tu contraseña?</a><br>
 <a href="http://localhost/SWIDDI/ControlAdmin">No tienes una cuenta?</a>
