@@ -15,8 +15,8 @@ class ControlCreacion extends CI_Controller {
 	{
 		$datos = array();
 
-		$datos['cargar'] = $this->Modelo->cargar();
-		$this->load->view('trabajosView.php',$datos);
+		
+		$this->load->view('trabajosView.php');
 	}
 	
 	
