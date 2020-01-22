@@ -20,6 +20,13 @@ class Modelo extends CI_Model {
           )",$tablaC);
     }
 
+    function cargar(){
+        $query = $this->db->query('SHOW FULL TABLES FROM swiddi1');
+
+        return $query->result();
+
+    }
+
      
     }
 
