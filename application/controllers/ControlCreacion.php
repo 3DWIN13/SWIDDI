@@ -2,7 +2,7 @@
 
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class ControlAdmin extends CI_Controller {
+class ControlCreacion extends CI_Controller {
 
 	public function __construct()
 	{
@@ -13,11 +13,9 @@ class ControlAdmin extends CI_Controller {
 
 	public function index()
 	{
-		
-		$this->load->view('InterfazA.php');
-	}
-
-	
+		$this->load->view('trabajosView.php');
+    }
+   
+    
 
 }
-?>

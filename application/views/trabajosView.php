@@ -44,7 +44,7 @@
         <ul class="nav-menu">
           <li class="menu-active"><a href="http://localhost/SWIDDI/ControlAdmin">inicio</a></li>
           <li><a href="http://localhost/SWIDDI/ControlTrabajos">Crear categorias</a></li>
-          <li><a href="http://localhost/SWIDDI/ControlCreacion">Crear trabajos</a></li>
+          <li><a href="http://localhost/SWIDDI/ControlTrabajos/trabajos">Crear trabajos</a></li>
           <li><a href="http://localhost/SWIDDI/ControlUsuarios">Pagina de usuario</a></li>
           <li><a href="http://localhost/SWIDDI">salir</a></li>
         </ul>
@@ -52,20 +52,22 @@
       
     </div>
   </header>
+ 
+  <div class="col-md-12">
   
-  <div class="col-md-12" >
-  
-  <section id="contact"  >
+  <section id="contact">
     <div class="container wow fadeInUp">
       <div class="row">
         <div class="col-md-12">
-          <h3 class="section-title">Nombra tu categoria</h3>
+          <h3 class="section-title">Creacion de trabajos</h3>
           <div class="section-title-divider"></div>
-          <p class="section-description">Escribe el nombre de la categoria de un empleo que deseas crear</p>
+          <p class="section-description">Crea los Empleos seleccionando las categorias y llenando las informaciones</p>
         </div>
       </div>
 
-      
+      <div class="row">
+        
+          </div>
         </div>
           <div class="form">
             <form action="http://localhost/SWIDDI/ControlTrabajos/crearT" class="form_contact" method="post">
@@ -73,13 +75,16 @@
                 <input style="width: 50%;margin-left:25%; text-align:center" type="text" name="NombreCategoria" class="form-control" id="NombreCategoria" placeholder="nombre de la categoria" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
                 <div class="validation"></div>
               </div>
+              <div class="form-group">
+                <input style="width: 50%;margin-left:25%; text-align:center" type="text" name="NombreCategoria" class="form-control" id="NombreCategoria" placeholder="nombre de la categoria" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                <div class="validation"></div>
+              </div>
               <br>
-              <div class="text-center"><button type="submit" class="btn btn-primary">Guardar categorias</button></div>
+              <div class="text-center"><button type="submit" class="btn btn-primary">Guardar trabajo</button></div>
             </form>
           </div>
-        </section>
         </div>
-            
+     
     <!--==========================
   Footer
 ============================-->

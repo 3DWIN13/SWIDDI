@@ -8,13 +8,21 @@ class ControlTrabajos extends CI_Controller {
 	{
 		parent::__construct();	
 
-	//	$this->load->model('ModelP');
+		$this->load->model('Modelo');
 	}
 
 	public function index()
 	{
 		$this->load->view('CreacionT.php');
-	}
+    }
+    public function crearT(){
+		if($_POST){
+			$this->Modelo->crearTabla($_POST['NombreCategoria']);
+        }
+        
+		$this->load->view('mensage.php');
+    }
+    
 
 }
 ?>
