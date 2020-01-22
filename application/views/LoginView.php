@@ -32,7 +32,7 @@
 <div class="login-box">
 
 <h1>Login Here</h1>
-<form action="<?php echo base_url();?>auth/login" method="post">
+<form action="" method="POST">
 
 <!-- USUARIO -->
 <label for="username">Usuario</label>
