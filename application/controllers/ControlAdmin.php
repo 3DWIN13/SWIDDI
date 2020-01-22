@@ -8,13 +8,16 @@ class ControlAdmin extends CI_Controller {
 	{
 		parent::__construct();	
 
-	//	$this->load->model('ModelP');
+		$this->load->model('Modelo');
 	}
 
 	public function index()
 	{
+		
 		$this->load->view('InterfazA.php');
 	}
+
+	
 
 }
 ?>
