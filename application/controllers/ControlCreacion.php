@@ -13,8 +13,13 @@ class ControlCreacion extends CI_Controller {
 
 	public function index()
 	{
-		$this->load->view('trabajosView.php');
-    }
+		$datos = array();
+
+		$datos['cargar'] = $this->Modelo->cargar();
+		$this->load->view('trabajosView.php',$datos);
+	}
+	
+	
    
     
 
