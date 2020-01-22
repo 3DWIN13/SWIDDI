@@ -47,7 +47,7 @@
           <li><a href="http://localhost/SWIDDI/ControlTrabajos">Crear categorias</a></li>
           <li><a href="http://localhost/SWIDDI/ControlTrabajos/trabajos">Crear trabajos</a></li>
           <li><a href="http://localhost/SWIDDI/ControlUsuarios">Pagina de usuario</a></li>
-          <li><a href="http://localhost/SWIDDI">salir</a></li>
+          <li><a href="http://localhost/SWIDDI">Salir</a></li>
         </ul>
       </nav>
 

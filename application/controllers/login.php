@@ -1,6 +1,6 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-class login extends CI_Controller {
+class Login extends CI_Controller {
 
     public function __construct(){
         parent::__construct();
@@ -10,7 +10,7 @@ class login extends CI_Controller {
 	{
         if(isset($_POST['password'])){
         $this->load->model('usuario_model');
-        if($this->usuario_model->login($_POST['username'],$_POST['password'])){
+        if($this->usuario_model->login($_POST['username'],md5($_POST['password']))){
             redirect('welcome');
         }else{
             redirect('LoginView');
