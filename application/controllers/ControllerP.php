@@ -17,4 +17,3 @@ class ControllerP extends CI_Controller {
 	}
 
 }
-?>
