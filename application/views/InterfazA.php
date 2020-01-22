@@ -43,7 +43,8 @@
       <nav id="nav-menu-container">
         <ul class="nav-menu">
         <li class="menu-active"><a href="http://localhost/SWIDDI/ControlAdmin">inicio</a></li>
-          <li><a href="http://localhost/SWIDDI/ControlTrabajos">Crear Trabajos</a></li>
+        <li><a href="http://localhost/SWIDDI/ControlTrabajos">Crear categorias</a></li>
+          <li><a href="http://localhost/SWIDDI/ControlTrabajos/trabajos">Crear trabajos</a></li>
           <li><a href="http://localhost/SWIDDI/ControlUsuarios">Pagina de usuario</a></li>
           <li><a href="http://localhost/SWIDDI">salir</a></li>
         </ul>
