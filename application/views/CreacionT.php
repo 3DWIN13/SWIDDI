@@ -43,7 +43,8 @@
       <nav id="nav-menu-container">
         <ul class="nav-menu">
           <li class="menu-active"><a href="http://localhost/SWIDDI/ControlAdmin">inicio</a></li>
-          <li><a href="http://localhost/SWIDDI/ControlTrabajos">Crear Trabajos</a></li>
+          <li><a href="http://localhost/SWIDDI/ControlTrabajos">Crear categorias</a></li>
+          <li><a href="http://localhost/SWIDDI/ControlCreacion">Crear trabajos</a></li>
           <li><a href="http://localhost/SWIDDI/ControlUsuarios">Pagina de usuario</a></li>
           <li><a href="http://localhost/SWIDDI">salir</a></li>
         </ul>
@@ -51,33 +52,34 @@
       
     </div>
   </header>
- 
-  <div class="col-md-8" style="margin-left: 15%">
+  
+  <div class="col-md-12" >
+  
+  <section id="contact"  >
+    <div class="container wow fadeInUp">
+      <div class="row">
+        <div class="col-md-12">
+          <h3 class="section-title">Nombra tu categoria</h3>
+          <div class="section-title-divider"></div>
+          <p class="section-description">Escribe el nombre de la categoria de un empleo que deseas crear</p>
+        </div>
+      </div>
+
+      
+        </div>
           <div class="form">
-            <div id="sendmessage">Your message has been sent. Thank you!</div>
-            <div id="errormessage"></div>
-            <form action="" method="post" role="form" class="contactForm">
+            <form action="http://localhost/SWIDDI/ControlTrabajos/crearT" class="form_contact" method="post">
               <div class="form-group">
-                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                <input style="width: 50%;margin-left:25%; text-align:center" type="text" name="NombreCategoria" class="form-control" id="NombreCategoria" placeholder="nombre de la categoria" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
                 <div class="validation"></div>
               </div>
-              <div class="form-group">
-                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
-                <div class="validation"></div>
-              </div>
-              <div class="form-group">
-                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
-                <div class="validation"></div>
-              </div>
-              <div class="form-group">
-                <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
-                <div class="validation"></div>
-              </div>
-              <div class="text-center"><button type="submit">Send Message</button></div>
+              <br>
+              <div class="text-center"><button type="submit" class="btn btn-primary">Guardar categorias</button></div>
             </form>
           </div>
+        </section>
         </div>
-     
+            
     <!--==========================
   Footer
 ============================-->
