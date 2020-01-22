@@ -32,11 +32,7 @@
 <div class="login-box">
 
 <h1>Login Here</h1>
-<<<<<<< HEAD
 <form action="" method="POST">
-=======
-<form action="http://localhost/SWIDDI/login.php" method="post">
->>>>>>> 9aad316c692633eab6675b033173d6dec41b82dd
 
 <!-- USUARIO -->s
 <label for="username">Usuario</label>
