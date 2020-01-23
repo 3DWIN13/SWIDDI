@@ -26,11 +26,32 @@ class Modelo extends CI_Model {
         return $query->result();
 
     }
+    function guardar($location,$position,$company,$description,$howtoapply,$category,$latabla){
+
+        /*$id = $persona['id'];
+        if($id+0>0){
+            $this->db->where('id=',$id);
+            unset($persona['id']);
+            $this->db->update('usuarios',$persona);
+
+        }else{*/
+            $this->db->query("INSERT INTO `'$latabla'` (location,position,company,description,howtoapply,category) VALUES ('$location','$position','$company','$description','$howtoapply','$category')");
+        //}
+
+    }
 
      
     }
 
 
 
-/* End of file Controllername.php */
+/* End of file Controllername.php 
+`id` int(11) NOT NULL AUTO_INCREMENT,
+            `location` varchar(100) NOT NULL,
+            `position` varchar(100) NOT NULL,
+            `company` varchar(100) NOT NULL,
+            `description` varchar(100) NOT NULL,
+            `howtoapply` varchar(200) NOT NULL,
+            `category` varchar(50) NOT NULL,
+*/
 ?>
