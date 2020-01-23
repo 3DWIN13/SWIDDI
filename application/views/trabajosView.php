@@ -1,4 +1,9 @@
-
+<?php
+/*       foreach ($swiddi1 as $key) {
+    //     echo $key;
+         var_dump($key->Tables_in_swiddi1);
+       }*/   
+            ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -71,17 +76,13 @@
         </div>
       </div>
       <div class="form">
-        <form action="http://localhost/SWIDDI/ControlTrabajos/crearT" class="form_contact" method="post">
+        <form action="http://localhost/SWIDDI/ControlCreacion/guardar" class="form_contact" method="post">
           <div class="form-group">
-            <select class="form-control" style="width: 50%;margin-left:25%; text-align:center">
-            <?php
-            foreach($cargar as $key){
-              echo $key;
-            }
-            ?>
+            <select class="form-control" style="width: 50%;margin-left:25%; text-align:center" name="cbo" id="cbo">
+            
 
-            <?php foreach($cargar as $key): ?>
-              <option value=""></option>
+            <?php foreach($swiddi1 as $key): ?>
+              <option value="<?php $c= $key->Tables_in_swiddi1;$c1=trim($c,"'"); echo $c1; ?>"><?php $c= $key->Tables_in_swiddi1;$c1=trim($c,"'");echo $c1; ?></option>
               <?php endforeach ?>
             </select>
           </div>
@@ -108,9 +109,9 @@
           </div>
 
           
-          <div class="form-group">
+        <!--   <div class="form-group">
             <input style="width: 50%;margin-left:25%; text-align:center" type="text" name="category" class="form-control" id="category" placeholder="" required />
-          </div>
+          </div>-->
           <br>
           <div class="text-center"><button type="submit" class="btn btn-primary">Guardar trabajo</button></div>
         </form>
