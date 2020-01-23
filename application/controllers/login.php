@@ -11,11 +11,12 @@ class Login extends CI_Controller {
         if(isset($_POST['password'])){
         $this->load->model('usuario_model');
         if($this->usuario_model->login($_POST['username'],md5($_POST['password']))){
-            redirect('welcome');
+            redirect('InterfazA.php');
         }else{
-            redirect('LoginView');
+            redirect('InterfazA.php');
         }
         }
-		$this->load->view('LoginView');
+		$this->load->view('InterfazA.php');
 	}
 }
+?>

@@ -32,7 +32,7 @@
 <div class="login-box">
 
 <h1>Login Here</h1>
-<form action="" method="POST">
+<form action="ControlAdmin" method="POST">
 
 <!-- USUARIO -->
 <label for="username">Usuario</label>
