@@ -87,7 +87,7 @@
             </select>
           </div>
           <div class="form-group">
-            <input style="width: 50%;margin-left:25%; text-align:center" type="text" name="location" class="form-control" id="location" placeholder="Localidad del trabajo" required />
+            <input style="width: 50%;margin-left:25%; text-align:center" type="text" name="location" class="form-control" id="location" placeholder="Localidad del trabajo"  required />
           </div>
 
           <div class="form-group">
