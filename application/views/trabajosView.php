@@ -81,13 +81,8 @@
             <select class="form-control" style="width: 50%;margin-left:25%; text-align:center" name="cbo" id="cbo">
             
 
-<<<<<<< HEAD
-            <?php foreach($cargar as $key): ?>
-              <option>Programador</option>
-=======
             <?php foreach($swiddi1 as $key): ?>
               <option value="<?php $c= $key->Tables_in_swiddi1;$c1=trim($c,"'"); echo $c1; ?>"><?php $c= $key->Tables_in_swiddi1;$c1=trim($c,"'");echo $c1; ?></option>
->>>>>>> d23df7553ab7187409791a19a0ea55f7150214a7
               <?php endforeach ?>
             </select>
           </div>
