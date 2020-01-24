@@ -42,7 +42,7 @@
     <div class="container">
 
       <div id="logo" class="pull-left">
-        <a href="http://localhost/SWIDDI/"><img src="img/logo.png" alt="" title="" /></img></a>
+        <a href="http://localhost/SWIDDI"><img src="img/logo.png" alt="" title="" /></img></a>
 
       </div>
 
