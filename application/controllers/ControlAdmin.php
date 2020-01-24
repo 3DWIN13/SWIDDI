@@ -34,6 +34,7 @@ class ControlAdmin extends CI_Controller {
 	$this->load->view('InterfazA.php',$data,$datos);
 }
 
+
 	
 
 }
