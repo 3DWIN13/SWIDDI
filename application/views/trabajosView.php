@@ -81,7 +81,7 @@
             ?>
 
             <?php foreach($cargar as $key): ?>
-              <option value=""></option>
+              <option>Programador</option>
               <?php endforeach ?>
             </select>
           </div>
@@ -97,10 +97,6 @@
             <input style="width: 50%;margin-left:25%; text-align:center" type="text" name="company" class="form-control" id="company" placeholder="Compañia que ofrece el empleo" required />
           </div>
 
-          
-          <div class="form-group">
-            <textarea style="resize: none;width: 50%;margin-left:25%; text-align:center" type="text" name="description" class="form-control" id="description" placeholder="Descripcion" required ></textarea>
-          </div>
 
           
           <div class="form-group">
@@ -109,8 +105,13 @@
 
           
           <div class="form-group">
-            <input style="width: 50%;margin-left:25%; text-align:center" type="text" name="category" class="form-control" id="category" placeholder="" required />
+            <input style="width: 50%;margin-left:25%; text-align:center" type="text" name="category" class="form-control" id="category" placeholder="Categoria" required />
           </div>
+
+          <div class="form-group">
+            <textarea style="resize: none;width: 50%;margin-left:25%; text-align:center" type="text" name="description" class="form-control" id="description" placeholder="Descripcion" required ></textarea>
+          </div>
+          
           <br>
           <div class="text-center"><button type="submit" class="btn btn-primary">Guardar trabajo</button></div>
         </form>
