@@ -45,6 +45,23 @@ class Modelo extends CI_Model {
         return $query->result();
 
     }
+    function editar($latabla,$id,$location,$position,$company,$description,$howtoapply){
+       
+        $this->db->query("UPDATE `'$latabla'` SET 
+        location='$location',
+        position='$position',
+        company='$company',
+        description='$description',
+        howtoapply='$howtoapply'
+         WHERE id= '$id'");
+    }
+
+    function cargar3($latabla,$elid){
+        $query = $this->db->query("SELECT * FROM `$latabla` where id = $elid" );
+
+        return $query->result();
+
+    }
 /*****SELECT * FROM `'$latabla'` */
      
     }
