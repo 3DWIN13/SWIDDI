@@ -81,8 +81,13 @@
             <select class="form-control" style="width: 50%;margin-left:25%; text-align:center" name="cbo" id="cbo">
             
 
+<<<<<<< HEAD
+            <?php foreach($cargar as $key): ?>
+              <option>Programador</option>
+=======
             <?php foreach($swiddi1 as $key): ?>
               <option value="<?php $c= $key->Tables_in_swiddi1;$c1=trim($c,"'"); echo $c1; ?>"><?php $c= $key->Tables_in_swiddi1;$c1=trim($c,"'");echo $c1; ?></option>
+>>>>>>> d23df7553ab7187409791a19a0ea55f7150214a7
               <?php endforeach ?>
             </select>
           </div>
@@ -98,10 +103,6 @@
             <input style="width: 50%;margin-left:25%; text-align:center" type="text" name="company" class="form-control" id="company" placeholder="Compañia que ofrece el empleo" required />
           </div>
 
-          
-          <div class="form-group">
-            <textarea style="resize: none;width: 50%;margin-left:25%; text-align:center" type="text" name="description" class="form-control" id="description" placeholder="Descripcion" required ></textarea>
-          </div>
 
           
           <div class="form-group">
@@ -109,9 +110,21 @@
           </div>
 
           
+          <div class="form-group">
+            <input style="width: 50%;margin-left:25%; text-align:center" type="text" name="category" class="form-control" id="category" placeholder="Categoria" required />
+          </div>
+
+<<<<<<< HEAD
+          <div class="form-group">
+            <textarea style="resize: none;width: 50%;margin-left:25%; text-align:center" type="text" name="description" class="form-control" id="description" placeholder="Descripcion" required ></textarea>
+          </div>
+          
+=======
+          
         <!--   <div class="form-group">
             <input style="width: 50%;margin-left:25%; text-align:center" type="text" name="category" class="form-control" id="category" placeholder="" required />
           </div>-->
+>>>>>>> d23df7553ab7187409791a19a0ea55f7150214a7
           <br>
           <div class="text-center"><button type="submit" class="btn btn-primary">Guardar trabajo</button></div>
         </form>
