@@ -1,3 +1,11 @@
+<?php
+/*foreach ($sysobjects as $key) {
+   #code...
+  var_dump($key);
+}*/
+
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -26,6 +34,26 @@
     <!-- Main Stylesheet File -->
     <link href="css/style.css" rel="stylesheet">
 
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src='main.js'></script>
+
+    <!--JQUERY-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- FRAMEWORK BOOTSTRAP para el estilo de la pagina-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+
+    <!-- Los iconos tipo Solid de Fontawesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css">
+    <script src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+
+    <style type="text/css">
+		
+		</style>
+
 </head>
 
 <body>
@@ -53,6 +81,95 @@
     </div>
   </header>
  
+  <?php
+  
+  /***************
+   * 
+   * 
+   * ********************** */
+
+  $data = array();
+
+  /*$datos['sysobjects'] = $this->Modelo->cargar2();*/
+  
+  
+
+  $datos = array();
+
+  $datos['swiddi1'] = $this->Modelo->cargar();
+  foreach ($datos['swiddi1'] as $key){ ?>
+  <br>
+    <br>
+    <h2 style="text-align: center; border:1px solid;"> <?=$key->Tables_in_swiddi1?> </h2>
+    
+    
+    <div class="container">
+  <div class="row align-items-center">
+    <div class="col" style="border:1px solid;backgroud:#111">
+      # 
+    </div>
+    <div class="col" style="border:1px solid;backgroud:#111">
+    Location
+    </div>
+    <div class="col" style="border:1px solid;backgroud:#111">
+    Position
+    </div>
+    <div class="col" style="border:1px solid;backgroud:#111">
+    Company
+    </div>
+    <div class="col" style="border:1px solid;backgroud:#111">
+    Description
+    </div>
+    <div class="col" style="border:1px solid;backgroud:#111">
+    How to apply
+    </div>
+    <div class="col" style="border:1px solid;backgroud:#111">
+    Category
+    </div>
+  </div>
+</div>
+
+<?php
+  $data['objects'] = $this->Modelo->cargar2($key ->Tables_in_swiddi1);
+  foreach ($data['objects'] as $key){
+  
+  ?>
+ 
+ <div class="container">
+  <div class="row align-items-center">
+    <div class="col">
+    <?=$key->id?>
+    </div>
+    <div class="col">
+    <?=$key->location?>
+    </div>
+    <div class="col">
+    <?=$key->position?>
+    </div>
+    <div class="col">
+    <?=$key->company?>
+    </div>
+    <div class="col">
+    <?=$key->description?>
+    </div>
+    <div class="col">
+    <?=$key->howtoapply?>
+    </div>
+    <div class="col">
+    <?=$key->category?>
+    </div>
+  </div>
+</div>
+
+
+<?php } ?>
+   <?php } ?>
+
+    
+   
+   
+
+
     <!--==========================
   Footer
 ============================-->
