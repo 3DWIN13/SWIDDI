@@ -45,14 +45,15 @@ class Modelo extends CI_Model {
         return $query->result();
 
     }
-    function editar($latabla,$id,$location,$position,$company,$description,$howtoapply){
+    function editar($latabla,$id,$location,$position,$company,$description,$howtoapply,$category){
        
         $this->db->query("UPDATE `'$latabla'` SET 
         location='$location',
         position='$position',
         company='$company',
         description='$description',
-        howtoapply='$howtoapply'
+        howtoapply='$howtoapply',
+        category='$category'
          WHERE id= '$id'");
     }
 
@@ -62,6 +63,14 @@ class Modelo extends CI_Model {
         return $query->result();
 
     }
+    function eliminar($latabla,$elid){
+     $this->db->query("DELETE FROM `$latabla` where id = $elid" );
+
+    }
+    function drop($latabla){
+        $this->db->query("DROP TABLE `$latabla`");
+   
+       }
 /*****SELECT * FROM `'$latabla'` */
      
     }
