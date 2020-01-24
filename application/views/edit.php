@@ -3,7 +3,7 @@
     //     echo $key;
          var_dump($key->Tables_in_swiddi1);
        }*/   
-       echo $_POST['editar'];
+       //echo $_POST['editar'];
        $str = explode(",",$_POST['editar']);
 //echo $str[1];
 $str2 = $str[1];
@@ -11,8 +11,8 @@ $str2 = $str[1];
        $datos = array();
 
        $str3=$str[0];
-       echo $str3;
-       echo $str2;
+       //echo $str3;
+      // echo $str2;
 
             ?>
 <!DOCTYPE html>
@@ -78,7 +78,7 @@ $str2 = $str[1];
           <div class="col-md-12">
             <h3 class="section-title">editor de trabajos</h3>
             <div class="section-title-divider"></div>
-            <p class="section-description">Crea los Empleos seleccionando las categorias y llenando las informaciones</p>
+            <p class="section-description">Edita los Empleos cambiando las informaciones</p>
           </div>
         </div>
 
@@ -131,7 +131,7 @@ $str2 = $str[1];
             <input style="width: 50%;margin-left:25%; text-align:center" type="text" name="category" class="form-control" id="category" placeholder="" required />
           </div>-->
           <br>
-          <div class="text-center"><button type="submit" class="btn btn-primary">Guardar trabajo</button></div>
+          <div class="text-center"><button type="submit" class="btn btn-primary">actualizar trabajo</button></div>
         </form>
       </div>
     </section>
