@@ -1,4 +1,9 @@
-
+<?php
+/*       foreach ($swiddi1 as $key) {
+    //     echo $key;
+         var_dump($key->Tables_in_swiddi1);
+       }*/   
+            ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -37,7 +42,7 @@
     <div class="container">
 
       <div id="logo" class="pull-left">
-        <a href="#hero"><img src="img/logo.png" alt="" title="" /></img></a>
+        <a href="http://localhost/SWIDDI"><img src="img/logo.png" alt="" title="" /></img></a>
 
       </div>
 
@@ -71,17 +76,18 @@
         </div>
       </div>
       <div class="form">
-        <form action="http://localhost/SWIDDI/ControlTrabajos/crearT" class="form_contact" method="post">
+        <form action="http://localhost/SWIDDI/ControlCreacion/guardar" class="form_contact" method="post">
           <div class="form-group">
-            <select class="form-control" style="width: 50%;margin-left:25%; text-align:center">
-            <?php
-            foreach($cargar as $key){
-              echo $key;
-            }
-            ?>
+            <select class="form-control" style="width: 50%;margin-left:25%; text-align:center" name="cbo" id="cbo">
+            
 
+<<<<<<< HEAD
             <?php foreach($cargar as $key): ?>
               <option>Programador</option>
+=======
+            <?php foreach($swiddi1 as $key): ?>
+              <option value="<?php $c= $key->Tables_in_swiddi1;$c1=trim($c,"'"); echo $c1; ?>"><?php $c= $key->Tables_in_swiddi1;$c1=trim($c,"'");echo $c1; ?></option>
+>>>>>>> d23df7553ab7187409791a19a0ea55f7150214a7
               <?php endforeach ?>
             </select>
           </div>
@@ -108,10 +114,17 @@
             <input style="width: 50%;margin-left:25%; text-align:center" type="text" name="category" class="form-control" id="category" placeholder="Categoria" required />
           </div>
 
+<<<<<<< HEAD
           <div class="form-group">
             <textarea style="resize: none;width: 50%;margin-left:25%; text-align:center" type="text" name="description" class="form-control" id="description" placeholder="Descripcion" required ></textarea>
           </div>
           
+=======
+          
+        <!--   <div class="form-group">
+            <input style="width: 50%;margin-left:25%; text-align:center" type="text" name="category" class="form-control" id="category" placeholder="" required />
+          </div>-->
+>>>>>>> d23df7553ab7187409791a19a0ea55f7150214a7
           <br>
           <div class="text-center"><button type="submit" class="btn btn-primary">Guardar trabajo</button></div>
         </form>
