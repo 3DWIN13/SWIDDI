@@ -101,7 +101,7 @@
  <br>
     <br>
     
-    <h2 style="text-align: center; "><?php $c= $key->Tables_in_swiddi1;$c1=trim($c,"'"); echo $c1; ?>  | <button value="" type="submit" name="dell"><i class="fas fa-calendar-times"></i></button></h2> 
+    <h2 style="text-align: center; "><?php $c= $key->Tables_in_swiddi1;$c1=trim($c,"'"); echo $c1; ?>  | <button value="<?=$key->Tables_in_swiddi1?>" type="submit" name="drop"><i class="fas fa-calendar-times"></i></button></h2> 
     
     <input type="hidden" name="cat" value="<?=$key->Tables_in_swiddi1?>">
     <div class="container" style="background-color: #839192 ">
@@ -165,7 +165,7 @@
     </div>
     
     <div class="col">
-    <button value="<?=$key->id,',', $key->category?>" type="submit" name="editar"><i class="fas fa-edit"></i></button> | <button value="<?=$key->id?>" type="submit" name="dell"><i class="fas fa-user-times"></i></button>
+    <button value="<?=$key->id,',', $key->category?>" type="submit" name="editar"><i class="fas fa-edit"></i></button> | <button value="<?=$key->id,',', $key->category?>" type="submit" name="dell"><i class="fas fa-user-times"></i></button>
     </div>
   </div>
 </div>
