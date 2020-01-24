@@ -13,6 +13,7 @@ class ControlCreacion extends CI_Controller {
 
 	public function index()
 	{
+		
 		$datos = array();
 
 		$datos['swiddi1'] = $this->Modelo->cargar();
@@ -26,6 +27,7 @@ class ControlCreacion extends CI_Controller {
 		}
 		$this->load->view('mensage');
 	}
+	
 	
    
     
