@@ -29,7 +29,7 @@
 <body>
     <div class="container text-center">
         <h3>Operacion Completada</h3>
-        <a href="http://localhost/SWIDDI/ControlTrabajos" class="btn btn-info" >Continuar</a>
+        <a href="http://localhost/SWIDDI/ControlAdmin" class="btn btn-info" >Continuar</a>
     </div>
 </body>
 </html>
