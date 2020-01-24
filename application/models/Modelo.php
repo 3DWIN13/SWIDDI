@@ -39,7 +39,13 @@ class Modelo extends CI_Model {
         //}
 
     }
+    function cargar2($latabla){
+        $query = $this->db->query("SELECT * FROM `$latabla`");
 
+        return $query->result();
+
+    }
+/*****SELECT * FROM `'$latabla'` */
      
     }
 
