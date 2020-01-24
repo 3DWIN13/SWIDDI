@@ -80,7 +80,7 @@
       
     </div>
   </header>
- 
+ <form action="http://localhost/SWIDDI/ControlEdit" method="post"> 
   <?php
   
   /***************
@@ -98,36 +98,41 @@
 
   $datos['swiddi1'] = $this->Modelo->cargar();
   foreach ($datos['swiddi1'] as $key){ ?>
-  <br>
+ <br>
     <br>
-    <h2 style="text-align: center; border:1px solid;"> <?=$key->Tables_in_swiddi1?> </h2>
     
+    <h2 style="text-align: center; "><?php $c= $key->Tables_in_swiddi1;$c1=trim($c,"'"); echo $c1; ?>  | <button value="" type="submit" name="dell"><i class="fas fa-calendar-times"></i></button></h2> 
     
-    <div class="container">
+    <input type="hidden" name="cat" value="<?=$key->Tables_in_swiddi1?>">
+    <div class="container" style="background-color: #839192 ">
   <div class="row align-items-center">
-    <div class="col" style="border:1px solid;backgroud:#111">
+    <div class="col" style="border:1px solid;">
       # 
     </div>
-    <div class="col" style="border:1px solid;backgroud:#111">
+    <div class="col" style="border:1px solid;">
     Location
     </div>
-    <div class="col" style="border:1px solid;backgroud:#111">
+    <div class="col" style="border:1px solid;">
     Position
     </div>
-    <div class="col" style="border:1px solid;backgroud:#111">
+    <div class="col" style="border:1px solid;">
     Company
     </div>
-    <div class="col" style="border:1px solid;backgroud:#111">
+    <div class="col" style="border:1px solid;">
     Description
     </div>
-    <div class="col" style="border:1px solid;backgroud:#111">
+    <div class="col" style="border:1px solid;">
     How to apply
     </div>
-    <div class="col" style="border:1px solid;backgroud:#111">
+    <div class="col" style="border:1px solid;">
     Category
+    </div>
+    <div class="col" style="border:1px solid;">
+   operation
     </div>
   </div>
 </div>
+
 
 <?php
   $data['objects'] = $this->Modelo->cargar2($key ->Tables_in_swiddi1);
@@ -135,12 +140,12 @@
   
   ?>
  
- <div class="container">
+ <div class="container" style="background-color: #B3B6B7;border:1px solid " >
   <div class="row align-items-center">
-    <div class="col">
+    <div class="col" >
     <?=$key->id?>
     </div>
-    <div class="col">
+    <div class="col" >
     <?=$key->location?>
     </div>
     <div class="col">
@@ -158,22 +163,29 @@
     <div class="col">
     <?=$key->category?>
     </div>
+    
+    <div class="col">
+    <button value="<?=$key->id,',', $key->category?>" type="submit" name="editar"><i class="fas fa-edit"></i></button> | <button value="<?=$key->id?>" type="submit" name="dell"><i class="fas fa-user-times"></i></button>
+    </div>
   </div>
 </div>
+  
+    
 
 
 <?php } ?>
    <?php } ?>
 
-    
-   
+
+  </form>
    
 
 
     <!--==========================
   Footer
 ============================-->
-    <footer id="footer">
+
+    <footer id="footer" style="margin-top: 20%">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
