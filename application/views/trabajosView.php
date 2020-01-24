@@ -105,10 +105,7 @@
           </div>
 
           
-          <div class="form-group">
-            <input style="width: 50%;margin-left:25%; text-align:center" type="text" name="category" class="form-control" id="category" placeholder="Categoria" required />
-          </div>
-
+          
           <div class="form-group">
             <textarea style="resize: none;width: 50%;margin-left:25%; text-align:center" type="text" name="description" class="form-control" id="description" placeholder="Descripcion" required ></textarea>
           </div>
