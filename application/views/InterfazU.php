@@ -60,7 +60,7 @@
         <div class="col-md-12">
           <h3 class="section-title">Busca tu trabajo ideal</h3>
           <div class="section-title-divider"></div>
-          <p class="section-description">Seleccione algunas de las casillas para entrar en más detalles</p>
+          <p class="section-description">Seleccione algunas de las casillas para entrar en más detalles.</p>
         </div>
       </div>
 
@@ -71,6 +71,39 @@
     <!--==========================
   aqui se anadiran las tablas que el admin ponga
 ============================-->
+      
+      
+      
+<div class="container" style="background-color: #839192 ">
+  <div class="row align-items-center">
+    <div class="col" style="border:1px solid;">
+      # 
+    </div>
+    <div class="col" style="border:1px solid;">
+    Location
+    </div>
+    <div class="col" style="border:1px solid;">
+    Position
+    </div>
+    <div class="col" style="border:1px solid;">
+    Company
+    </div>
+    <div class="col" style="border:1px solid;">
+    Description
+    </div>
+    <div class="col" style="border:1px solid;">
+    How to apply
+    </div>
+    <div class="col" style="border:1px solid;">
+    Category
+    </div>
+    <div class="col" style="border:1px solid;">
+   operation
+    </div>
+  </div>
+</div>
+      
+      
       </div>
     </div>
   </section>
