@@ -71,40 +71,69 @@
     <!--==========================
   aqui se anadiran las tablas que el admin ponga
 ============================-->
-      
-      
-      
-<div class="container" style="background-color: #839192 ">
-  <div class="row align-items-center">
-    <div class="col" style="border:1px solid;">
-      # 
-    </div>
-    <div class="col" style="border:1px solid;">
-    Location
-    </div>
-    <div class="col" style="border:1px solid;">
-    Position
-    </div>
-    <div class="col" style="border:1px solid;">
-    Company
-    </div>
-    <div class="col" style="border:1px solid;">
-    Description
-    </div>
-    <div class="col" style="border:1px solid;">
-    How to apply
-    </div>
-    <div class="col" style="border:1px solid;">
-    Category
-    </div>
-    <div class="col" style="border:1px solid;">
-   operation
-    </div>
-  </div>
+<form action="" method="post">
+ 
+<div class="section-title">
+  <h3>Programadores</h3>
 </div>
+     <div class="contenedor">
+     <div>
+    <?=row();?>
+</div>
+</div>
+ <!--==========================
+  DIVISION
+============================-->
+<div>
+    .
+</div>
+<div class="section-title">
+
+  <h3>Diseñador</h3>
+
+</div>
+<div class="contenedor">
+     <div>
+    <?=row();?>
+</div>
+</div>
+<!--==========================
+  DIVISION
+============================-->
+<div>
+    .
+</div>
+<div class="section-title">
+ 
+  <h3>Ingenieria civil</h3>
+
+</div>
+<div class="contenedor">
+     <div>
+    <?=row();?>
+</div>
+</div>
+</form> 
+<?php
+
+
+function row(){
+    return <<<CODIGO
+    <div class="contenedor" style=>
+      <div class="co">Location</div>
+      <div class="co">Company</div>
+      <div  class="co">Position</div>
+</div>
+CODIGO;
+}
+?>
+    
       
       
-      </div>
+    
+
+
+   </div>
     </div>
   </section>
     <!--==========================
