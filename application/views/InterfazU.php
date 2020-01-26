@@ -74,7 +74,7 @@
 <form action="" method="post">
  
 <div class="section-title">
-  <h3>Programadores</h3>
+  <h3>se me murio el cell, dame tu facebook</h3>
 </div>
      <div class="contenedor">
      <div>
