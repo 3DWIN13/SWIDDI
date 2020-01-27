@@ -89,7 +89,7 @@
 </div>
 <div class="section-title">
 
-  <h3>Diseñador</h3>
+  <h3>mi facebook es edwin imanol collado castillo, escribeme</h3>
 
 </div>
 <div class="contenedor">
