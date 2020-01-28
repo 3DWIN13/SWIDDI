@@ -68,14 +68,14 @@
         <a href="http://localhost/SWIDDI"><img src="img/logo.png" alt="" title="" /></img></a>
         
       </div>
-    <section id="contact">
+    
       <nav id="nav-menu-container">
         <ul class="nav-menu">
-        <li class="menu-active"><a href="http://localhost/SWIDDI/ControlAdmin">inicio</a></li>
+        <li class="menu-active"><a href="http://localhost/SWIDDI/ControlAdmin">Inicio</a></li>
         <li><a href="http://localhost/SWIDDI/ControlTrabajos">Crear categorias</a></li>
           <li><a href="http://localhost/SWIDDI/ControlCreacion">Crear trabajos</a></li>
           <li><a href="http://localhost/SWIDDI/ControlUsuarios">Pagina de usuario</a></li>
-          <li><a href="http://localhost/SWIDDI">salir</a></li>
+          <li><a href="http://localhost/SWIDDI">Salir</a></li>
         </ul>
       </nav>
       
