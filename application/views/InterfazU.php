@@ -25,7 +25,7 @@
 
   <!-- Main Stylesheet File -->
   <link href="css/style.css" rel="stylesheet">
-  <link href="css/estilos.css" rel="stylesheet">
+ 
 
 </head>
 <body>
@@ -69,73 +69,7 @@
         
           </div>
         </div>
-    <!--==========================
-  aqui se anadiran las tablas que el admin ponga
-============================-->
-<form action="" method="post">
- 
-<div class="section-title">
-  <h3>se me murio el cell, dame tu facebook</h3>
-</div>
-     <div class="contenedor">
-     <div>
-    <?=row();?>
-</div>
-</div>
- <!--==========================
-  DIVISION
-============================-->
-<div>
-    
-</div>
-<div class="section-title">
 
-  <h3>mi facebo es edwin imanol collado castillo, escribeme</h3>
-
-</div>
-<div class="contenedor">
-     <div>
-    <?=row();?>
-</div>
-</div>
-<!--==========================
-  DIVISION
-============================-->
-<div>
-    .
-</div>
-<div class="section-title">
- 
-  <h3>Ingenieria civil</h3>
-
-</div>
-<div class="contenedor">
-     <div>
-    <?=row();?>
-</div>
-</div>
-</form> 
-<?php
-
-
-function row(){
-    return <<<CODIGO
-    <div class="contenedor" style=>
-      <div class="co">Location</div>
-      <div class="co">Company</div>
-      <div  class="co">Position</div>
-</div>
-CODIGO;
-}
-?>
-    
-      
-      
-    
-
-
-   </div>
-    </div>
   </section>
     <!--==========================
   Footer
