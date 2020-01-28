@@ -81,14 +81,13 @@
         </div>
           <h3 class="section-title">Busca tu trabajo ideal</h3>
           <div class="section-title-divider"></div>
-<<<<<<< HEAD
+
           <div>
         .
         </div>
-          <p class="section-description">Seleccione algunas de las casillas para entrar en más detalles.</p>
-=======
-          <p class="section-description">Seleccione algunas de las casillas "mas informacion" para entrar en detalles.</p>
->>>>>>> 200cef8a61c9828e3bdd416da3275dcd069f9f80
+
+          <p class="section-description">Seleccione la casilla "more information" para entrar en más detalles.</p>
+
         </div>
       </div>
 
@@ -133,7 +132,7 @@
     Company
     </div>
     <div class="col" style="border:1px solid;">
-    see more information. 
+   More information 
     </div>
   </div>
 </div>
