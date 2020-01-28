@@ -1,11 +1,3 @@
-<?php
-/*foreach ($sysobjects as $key) {
-   #code...
-  var_dump($key);
-}*/
-
-
-?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -57,11 +49,7 @@
 
 </head>
 
-<body>
-    <!--==========================
-  Header Section
-  ============================-->
-  <header id="header">
+<header id="header">
     <div class="container">
 
       <div id="logo" class="pull-left">
@@ -71,127 +59,22 @@
     
       <nav id="nav-menu-container">
         <ul class="nav-menu">
-        <li class="menu-active"><a href="http://localhost/SWIDDI/ControlAdmin">Inicio</a></li>
-        <li><a href="http://localhost/SWIDDI/ControlTrabajos">Crear categorias</a></li>
-          <li><a href="http://localhost/SWIDDI/ControlCreacion">Crear trabajos</a></li>
-          <li><a href="http://localhost/SWIDDI/ControlUsuarios">Pagina de usuario</a></li>
+        <li class="menu-active"><a href="http://localhost/SWIDDI/ControlUsuarios">Inicio</a></li>
           <li><a href="http://localhost/SWIDDI">Salir</a></li>
         </ul>
       </nav>
       
     </div>
   </header>
-  <section id="contact">
-
- <form action="http://localhost/SWIDDI/ControlEdit" method="post"> 
- </section>
-  <?php
-  
-  /***************
-   * 
-   * 
-   * ********************** */
-
-  $data = array();
-
-  /*$datos['sysobjects'] = $this->Modelo->cargar2();*/
-  
-  
-
-  $datos = array();
-
-  $datos['swiddi1'] = $this->Modelo->cargar();
-  foreach ($datos['swiddi1'] as $key){ ?>
- <br>
-    <br>
-    
-    <h2 style="text-align: center; "><?php $c= $key->Tables_in_swiddi1;$c1=trim($c,"'"); echo $c1; ?>  | <button value="<?=$key->Tables_in_swiddi1?>" type="submit" name="drop"><i class="fas fa-calendar-times"></i></button></h2> 
-    
-    <input type="hidden" name="cat" value="<?=$key->Tables_in_swiddi1?>">
-    
-
-    <div class="container" style="background-color: #839192 ">
-  <div class="row align-items-center">
-    <div class="col" style="border:1px solid;">
-      # 
-    </div>
-    <div class="col" style="border:1px solid;">
-    Location
-    </div>
-    <div class="col" style="border:1px solid;">
-    Position
-    </div>
-    <div class="col" style="border:1px solid;">
-    Company
-    </div>
-    <div class="col" style="border:1px solid;">
-    Description
-    </div>
-    <div class="col" style="border:1px solid;">
-    How to apply
-    </div>
-    <div class="col" style="border:1px solid;">
-    Category
-    </div>
-    <div class="col" style="border:1px solid;">
-   operation
-    </div>
-  </div>
-</div>
-  
-
-<?php
-  $data['objects'] = $this->Modelo->cargar2($key ->Tables_in_swiddi1);
-  foreach ($data['objects'] as $key){
-  
-  ?>
- 
- <div class="container" style="background-color: #B3B6B7;border:1px solid " >
-  <div class="row align-items-center">
-    <div class="col" >
-    <?=$key->id?>
-    </div>
-    <div class="col" >
-    <?=$key->location?>
-    </div>
-    <div class="col">
-    <?=$key->position?>
-    </div>
-    <div class="col">
-    <?=$key->company?>
-    </div>
-    <div class="col">
-    <?=$key->description?>
-    </div>
-    <div class="col">
-    <?=$key->howtoapply?>
-    </div>
-    <div class="col">
-    <?=$key->category?>
-    </div>
-    
-    <div class="col">
-    <button value="<?=$key->id,',', $key->category?>" type="submit" name="editar"><i class="fas fa-edit"></i></button> | <button value="<?=$key->id,',', $key->category?>" type="submit" name="dell"><i class="fas fa-user-times"></i></button>
-    </div>
-  </div>
-</div>
-  
-    
+<body>
 
 
-<?php } ?>
-   <?php } ?>
 
-
-  </form>
- 
-
-
-    <!--==========================
+<!--==========================
   Footer
 ============================-->
 
-    <footer id="footer" style="margin-top: 20%">
+<footer id="footer" style="margin-top: 20%">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
