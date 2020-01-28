@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -32,23 +33,23 @@
 <div class="login-box">
 
 <h1>Login Here</h1>
-<form action="ControlAdmin" method="POST">
+<form action="http://localhost/SWIDDI/ControlLogin/diklogin" method="POST">
 
 <!-- USUARIO -->
 <label for="username">Usuario</label>
-<input type="text" name="username" id="username" placeholder="Ingrese su usuario">
+<input type="text" name="username" id="username" placeholder="Ingrese su usuario" required>
 
 <!-- CONTRA -->
 <label for="password">Contraseña</label>
-<input type="password" name="password" id="password" placeholder="Ingrese su contraseña">
+<input type="password" name="password" id="password" placeholder="Ingrese su contraseña" required> 
 
 <!-- BOTON -->
 
 <input type="submit"  value="Iniciar Sesion">
 
 
-<a href="#">Olvidaste tu contraseña?</a><br>
-<a href="#">No tienes una cuenta?</a>
+<a href="http://localhost/SWIDDI/ControlUsuarios">Pagina de usuarios</a><br>
+<a href="http://localhost/SWIDDI">Volver</a>
 
 </form>
 </div>
