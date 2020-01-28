@@ -839,10 +839,10 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #contact .form button[type="submit"] {
-  background: turquoise;
+  background: rgb(0, 0, 0);
   border: 0;
   padding: 10px 24px;
-  color: #000000;
+  color: #ffffff;
   transition: 0.4s;
 }
 
@@ -918,4 +918,5 @@ body.mobile-nav-active #mobile-nav-toggle {
  text-align: center;
 
 }
+
 
