@@ -50,6 +50,8 @@
     <!-- Los iconos tipo Solid de Fontawesome-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css">
     <script src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+    <link href="css/diseño.css" rel="stylesheet">
+
 
     <style type="text/css">
 		
