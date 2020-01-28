@@ -25,6 +25,7 @@
 
   <!-- Main Stylesheet File -->
   <link href="css/style.css" rel="stylesheet">
+  <link href="css/estilos.css" rel="stylesheet">
 
 </head>
 <body>
@@ -42,8 +43,8 @@
 
       <nav id="nav-menu-container">
         <ul class="nav-menu">
-          <li class="menu-active"><a href="http://localhost/SWIDDI">inicio</a></li>
-          <li><a href="http://localhost/SWIDDI">salir</a></li>
+          <li class="menu-active"><a href="http://localhost/SWIDDI">Inicio</a></li>
+          <li><a href="http://localhost/SWIDDI">Salir</a></li>
         </ul>
       </nav>
       
