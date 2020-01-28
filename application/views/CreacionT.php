@@ -25,6 +25,7 @@
 
   <!-- Main Stylesheet File -->
   <link href="css/style.css" rel="stylesheet">
+  <link href="css/estilos.css" rel="stylesheet">
 
 </head>
 
@@ -46,7 +47,7 @@
           <li><a href="http://localhost/SWIDDI/ControlTrabajos">Crear categorias</a></li>
           <li><a href="http://localhost/SWIDDI/ControlCreacion">Crear trabajos</a></li>
           <li><a href="http://localhost/SWIDDI/ControlUsuarios">Pagina de usuario</a></li>
-          <li><a href="http://localhost/SWIDDI">salir</a></li>
+          <li><a href="http://localhost/SWIDDI">Salir</a></li>
         </ul>
       </nav>
 
@@ -59,23 +60,36 @@
       <div class="container wow fadeInUp">
         <div class="row">
           <div class="col-md-12">
+            <div>
+              .
+</div>
             <h3 class="section-title">Nombra tu categoria</h3>
+            <div>
+              .
+</div>
             <div class="section-title-divider"></div>
-            <p class="section-description">Escribe el nombre de la categoria de un empleo que deseas crear</p>
+            <div>
+              .
+</div>
+            <p class="section-description">Escribe el nombre de la categoria de un empleo que deseas crear.</p>
+           
           </div>
         </div>
-
+       
 
       </div>
       <div class="form">
         <form action="http://localhost/SWIDDI/ControlTrabajos/crearT" class="form_contact" method="post">
           <div class="form-group">
 
-            <input style="width: 50%;margin-left:25%; text-align:center; border-color: turquoise;" type="text" class="form-control" id="NombreCategoria" name="NombreCategoria" placeholder="Nombre de la categoria" required>
+            <input style="width: 50%;margin-left:25%;text-align:center; border-color: turquoise;" type="text" class="form-control" id="NombreCategoria" name="NombreCategoria" placeholder="Nombre de la categoria" required>
             <div class="invalid-feedback">
             </div>
+            <div>
+              .
+</div>
             <br>
-            <div class="text-center"><button type="submit" class="btn btn-primary">Guardar categorias</button></div>
+            <div class="text-center"><button type="submit" class="btn btn-primary">Guardar categoria</button></div>
         </form>
       </div>
     </section>

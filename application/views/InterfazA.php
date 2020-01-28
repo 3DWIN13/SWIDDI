@@ -33,6 +33,7 @@
 
     <!-- Main Stylesheet File -->
     <link href="css/style.css" rel="stylesheet">
+    <link href="css/estilos.css" rel="stylesheet">
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src='main.js'></script>
@@ -67,7 +68,7 @@
         <a href="http://localhost/SWIDDI"><img src="img/logo.png" alt="" title="" /></img></a>
         
       </div>
-
+    <section id="contact">
       <nav id="nav-menu-container">
         <ul class="nav-menu">
         <li class="menu-active"><a href="http://localhost/SWIDDI/ControlAdmin">inicio</a></li>
@@ -80,7 +81,10 @@
       
     </div>
   </header>
+  <section id="contact">
+
  <form action="http://localhost/SWIDDI/ControlEdit" method="post"> 
+ </section>
   <?php
   
   /***************
@@ -104,6 +108,8 @@
     <h2 style="text-align: center; "><?php $c= $key->Tables_in_swiddi1;$c1=trim($c,"'"); echo $c1; ?>  | <button value="<?=$key->Tables_in_swiddi1?>" type="submit" name="drop"><i class="fas fa-calendar-times"></i></button></h2> 
     
     <input type="hidden" name="cat" value="<?=$key->Tables_in_swiddi1?>">
+    
+
     <div class="container" style="background-color: #839192 ">
   <div class="row align-items-center">
     <div class="col" style="border:1px solid;">
@@ -132,7 +138,7 @@
     </div>
   </div>
 </div>
-
+  
 
 <?php
   $data['objects'] = $this->Modelo->cargar2($key ->Tables_in_swiddi1);

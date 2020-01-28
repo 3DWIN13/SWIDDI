@@ -31,6 +31,7 @@
 
   <!-- Main Stylesheet File -->
   <link href="css/style.css" rel="stylesheet">
+  <link href="css/estilos.css" rel="stylesheet">
 
 </head>
 
@@ -65,9 +66,15 @@
       <div class="container wow fadeInUp">
         <div class="row">
           <div class="col-md-12">
-            <h3 class="section-title">Creacion de trabajos</h3>
+            <div>
+              .
+      </div>
+            <h3 class="section-title">Creación de trabajos</h3>
             <div class="section-title-divider"></div>
-            <p class="section-description">Crea los Empleos seleccionando las categorias y llenando las informaciones</p>
+            <div>
+              .
+      </div>
+            <p class="section-description">Crea los empleos seleccionando las categorias y llenando las informaciones.</p>
           </div>
         </div>
 
