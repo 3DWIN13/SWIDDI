@@ -59,8 +59,14 @@
     <div class="container wow fadeInUp">
       <div class="row">
         <div class="col-md-12">
+        <div>
+        .
+        </div>
           <h3 class="section-title">Busca tu trabajo ideal</h3>
           <div class="section-title-divider"></div>
+          <div>
+        .
+        </div>
           <p class="section-description">Seleccione algunas de las casillas para entrar en más detalles.</p>
         </div>
       </div>
