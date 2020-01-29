@@ -24,12 +24,18 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
     <script src='main.js'></script>
+    <link href="css/diseño.css" rel="stylesheet">
+
 
 </head>
+<section id="contact">
 <body>
+   
     <div class="container text-center">
         <h3>Operacion Completada</h3>
         <a href="http://localhost/SWIDDI/ControlAdmin" class="btn btn-info" >Continuar</a>
     </div>
+
 </body>
+</section>
 </html>

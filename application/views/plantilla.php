@@ -42,13 +42,14 @@
     <!-- Los iconos tipo Solid de Fontawesome-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css">
     <script src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+    <link href="css/diseño.css" rel="stylesheet">
 
     <style type="text/css">
 		
 		</style>
 
 </head>
-
+<section id="contact">
 <header id="header">
     <div class="container">
 
@@ -66,45 +67,67 @@
       
     </div>
   </header>
+ 
 <body>
 
 <?php foreach ($tabla as $key) {
     
     ?>
-
-<div class="container wow fadeInUp">
+<div>
+  .
+</div>
+<div class="container wow fadeInUp" style="border: 5px solid; width: 40%; background: white;" >
       <div class="row">
         <div class="col-md-8">
         <div>
         .
         </div>
-          <h3 class="section-title2"><?=  $key->company ?></h3>
+       
           
-          <h5 class="section-description2"><?=  $key->location ?></h5><br>
-          <div class="section-title-divider2"></div>
+           <h2 >Company</h2>
+          <h3><?=  $key->company ?></h3>
 
-          <div>
-          <h4 class="section-bla2"><?=  $key->position ?></h4>
-        </div>
+          <h2 >Location</h2>
+          <h3><?=  $key->location ?></h3>
 
-        <div class="section-title-divider2"></div>
+         
 
+         
+          <h2 >Position</h2>
+          <h3><?=  $key->position ?></h3>
+        
+
+        
+
+        
+        <h2 >Description</h2>
+        <h3><?=  $key->description ?></h3>
+        
+
+        
+        <h2 >How to apply?</h2>
+        <h3><?=  $key->howtoapply ?></h3>
+        
         <div>
-        <br><h4 class="section-bla2"><?=  $key->description ?></h4>
-        </div>
+  .
 
-        <div>
-        <br><h4 >how to apply?</h4>
-        <h4 class="section-bla2"><?=  $key->howtoapply ?></h4>
-        </div>
-
-
-
-        </div>
+  
+</div>
+        
       </div>
+</div>
+</div>
+<div>
+  .
+
+  
+</div>
+<div class="container text-center">
+<a href="http://localhost/SWIDDI/ControlUsuarios"><input type="button" value="Atras"></a>
 </div>
 
 <?php  } ?>
+</section>
 
 <!--==========================
   Footer

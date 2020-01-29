@@ -90,6 +90,10 @@
         .
         </div>
           <h3 class="section-title">Busca tu trabajo ideal</h3>
+          <div>
+        .
+        </div>
+
           <div class="section-title-divider"></div>
 
           <div>

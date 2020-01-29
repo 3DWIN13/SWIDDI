@@ -9,4 +9,13 @@ body{
 }
 .form-control{
     height: 80%;
+    
+}
+a input{
+    background: black;
+    text-align: center;
+    font-size: 18px;
+    height: 40px;
+   width: 120px;
+   
 }
