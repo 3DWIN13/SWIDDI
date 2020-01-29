@@ -68,7 +68,43 @@
   </header>
 <body>
 
+<?php foreach ($tabla as $key) {
+    
+    ?>
 
+<div class="container wow fadeInUp">
+      <div class="row">
+        <div class="col-md-8">
+        <div>
+        .
+        </div>
+          <h3 class="section-title2"><?=  $key->company ?></h3>
+          
+          <h5 class="section-description2"><?=  $key->location ?></h5><br>
+          <div class="section-title-divider2"></div>
+
+          <div>
+          <h4 class="section-bla2"><?=  $key->position ?></h4>
+        </div>
+
+        <div class="section-title-divider2"></div>
+
+        <div>
+        <br><h4 class="section-bla2"><?=  $key->description ?></h4>
+        </div>
+
+        <div>
+        <br><h4 >how to apply?</h4>
+        <h4 class="section-bla2"><?=  $key->howtoapply ?></h4>
+        </div>
+
+
+
+        </div>
+      </div>
+</div>
+
+<?php  } ?>
 
 <!--==========================
   Footer
