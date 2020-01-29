@@ -25,6 +25,7 @@ class ControlPlantilla extends CI_Controller {
   
           $datos['tabla'] = $this->Modelo->cargar3($str2,$str[0]);
         
+          
 		$this->load->view('plantilla.php',$datos);
 	}
 
