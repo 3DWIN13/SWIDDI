@@ -66,6 +66,14 @@
       <nav id="nav-menu-container">
         <ul class="nav-menu">
         <li class="menu-active"><a href="http://localhost/SWIDDI/ControlUsuarios">Inicio</a></li>
+        <li class="menu-has-children"><a href="">Busqueda</a>
+        <ul>
+            <?php foreach($swiddi1 as $key): ?>   
+              <li id="elvalor" name="elvalor" value="<?php $c= $key->Tables_in_swiddi1;$c1=trim($c,"'"); echo $c1; ?>"><a href="ControlPlantilla2?envio=<?php $c= $key->Tables_in_swiddi1;$c1=trim($c,"'"); echo $c1; ?>" ><?php $c= $key->Tables_in_swiddi1;$c1=trim($c,"'"); echo $c1; ?></a></li>
+               <?php endforeach ?>
+            </ul>
+        
+          </li>
           <li><a href="http://localhost/SWIDDI">Salir</a></li>
         </ul>
       </nav>
