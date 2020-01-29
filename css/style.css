@@ -479,6 +479,32 @@ body.mobile-nav-active #mobile-nav-toggle {
   margin-bottom: 20px;
 }
 
+.section-title2 {
+  font-size: 32px;
+  color: #111;
+  text-transform: uppercase;
+  text-align: left;
+  font-weight: 700;
+}
+
+.section-description2 {
+  text-align: left;
+  margin-bottom: 7px;
+}
+
+.section-bla2 {
+  text-align: left;
+  margin-bottom: 9px;
+}
+
+.section-title-divider2 {
+  width: 500px;
+  height: 3px;
+  background: #03C4EB;
+  /*margin: 0 auto;*/
+  margin-bottom: 9px;
+}
+
 /* Get Started Section
 --------------------------------*/
 #about {
