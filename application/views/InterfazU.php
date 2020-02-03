@@ -1,3 +1,36 @@
+<?php
+
+$data = array();
+
+//$datos['sysobjects'] = $this->Modelo->cargar2();
+
+$configA=2;
+$i=0;
+$datos = array();
+
+$datos['swiddi1'] = $this->Modelo->cargar();
+foreach ($datos['swiddi1'] as $key) {
+       // echo $key;
+    // var_dump($key ->Tables_in_swiddi1);
+   $i++; // $data = array();
+    
+/*$data['objects'] = $this->Modelo->cargar2($key ->Tables_in_swiddi1);
+foreach ($data['objects'] as $key) {
+  # code...
+  //var_dump($key);
+  
+  
+}
+//var_dump($data);
+//var_dump($datos);*/
+}
+
+$p=$i/$configA;
+
+$paginas = ceil($p);
+echo $p;
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -183,11 +216,36 @@
 
 <?php } ?>
    <?php } ?>
+
+     <!--==========================
+  pagiinacion
+============================-->
+   
+<nav aria-label="Page navigation example">
+  <ul class="pagination">
+    <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+    <li class="page-item"><a class="page-link" href="#">1</a></li>
+    <li class="page-item"><a class="page-link" href="#">2</a></li>
+    <li class="page-item"><a class="page-link" href="#">3</a></li>
+    <li class="page-item"><a class="page-link" href="#">Next</a></li>
+  </ul>
+</nav>
+
+  
+     <!--==========================
+  pagiinacion
+============================-->
+   
+
+</nav>
   </div>
 
   </form>
  
+  
   </section>
+
+  
 
     <!--==========================
   Footer
@@ -228,7 +286,5 @@
 
     <script src="contactform/contactform.js"></script>
 
-
 </body>
-
 </html>
