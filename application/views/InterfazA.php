@@ -57,7 +57,6 @@
 table, th,td{
 border: 1px solid black;
 border-collapse: collapse;
-text-align: center;
 
 
 }
@@ -104,7 +103,11 @@ background-color: #FFFFFF;
 
   
 
+<<<<<<< HEAD
   <section id="contact" >
+=======
+  <section id="contact" class="col-sm-12">
+>>>>>>> eacdb41c9821718237d2023a883ce9c839b404cc
 
   
 
@@ -114,7 +117,7 @@ background-color: #FFFFFF;
   <div>
   <input id="pag" type="number" min="1" pattern="^[0-9]+" name="pag">|<button name="pagi" id="pagi" class="btn btn-danger"> Guardar </button>
 
- </section>
+
   <?php
   
   
@@ -135,7 +138,7 @@ background-color: #FFFFFF;
   foreach ($datos['swiddi1'] as $key){ ?>
  
     
-    <table id="tabla" class="center" style="width: 90%">
+    <table id="tabla" class="center" style="margin: 150px auto;">
     <br>
     <br>
     <h2 style="text-align: center; "><?php $c= $key->Tables_in_swiddi1;$c1=trim($c,"'"); echo $c1; ?>  | <button value="<?=$key->Tables_in_swiddi1?>" type="submit" name="drop"><i class="fas fa-calendar-times"></i></button></h2> 
@@ -208,7 +211,7 @@ background-color: #FFFFFF;
   </form>
  
 
-
+  </section>
     <!--==========================
   Footer
 ============================-->
