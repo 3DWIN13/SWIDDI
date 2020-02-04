@@ -44,7 +44,7 @@
         <h1>Bienvenidos a SWIDDI</h1>
         <h2><span class="rotating">Encuentra tu empleo, Tú empleo ideal!</span></h2>
         <div class="actions">
-          <a href="http://localhost/SWIDDI/ControlUsuarios" class="btn-get-started">Usuario</a>
+          <a href="http://localhost/SWIDDI/ControlUsuarios?pagina=1" class="btn-get-started">Usuario</a>
           <a href="http://localhost/SWIDDI/ControlLogin" class="btn-services">Administrador</a>
         </div>
       </div>
