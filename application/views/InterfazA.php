@@ -74,6 +74,9 @@ td{
   background-color: #c7c4c4;
 }
 
+
+
+
 </style>
 
 </head>
@@ -113,8 +116,20 @@ td{
  <div>
   .
   <div>
-  <input id="pag" type="number" min="1" pattern="^[0-9]+" name="pag">|<button name="pagi" id="pagi" class="btn btn-danger"> Guardar </button>
-
+  <input style="width: 13%;
+  padding: 10px;
+  border: 2px solid black;
+  font-weight: 600;
+  background color: white;
+  color:black;
+  border-radius: 8px;" 
+  id="Massag" type="number" placeholder="Ingrese el numero de paginación" min="1" pattern="^[0-9]+" name="pag"> 
+   <button name="pagi" id="pagi" 
+   style="font:bold 25px Arial; text-decoration: none; color:white; border:solid 1.5px black;
+   border-radius: 8px;"
+   hover="background: white; color: white;" 
+   class="btn btn-danger"> Guardar </button>
+  
 
   <?php
   
