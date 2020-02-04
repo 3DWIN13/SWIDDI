@@ -65,7 +65,7 @@
     
       <nav id="nav-menu-container">
         <ul class="nav-menu">
-        <li class="menu-active"><a href="http://localhost/SWIDDI/ControlUsuarios">Inicio</a></li>
+        <li class="menu-active"><a href="http://localhost/SWIDDI/ControlUsuarios?pagina=1">Inicio</a></li>
         <li class="menu-has-children"><a href="">Busqueda</a>
        
         <ul>
