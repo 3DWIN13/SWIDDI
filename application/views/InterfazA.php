@@ -57,6 +57,9 @@
 table, th,td{
 border: 1px solid black;
 border-collapse: collapse;
+text-align: center;
+
+
 }
 
 th, td{
@@ -68,6 +71,7 @@ th, td{
 }
 table#tabla{
 background-color: #FFFFFF;
+
 }
 </style>
 
@@ -100,13 +104,15 @@ background-color: #FFFFFF;
 
   
 
-  <section id="contact">
+  <section id="contact" >
 
   
 
  <form action="http://localhost/SWIDDI/ControlEdit" method="post">
-  
-  <input id="pag" type="number" min="1" pattern="^[0-9]+" name="pag">|<button name="pagi" id="pagi" class="btn btn-danger"> guardar </button>
+ <div>
+  .
+  <div>
+  <input id="pag" type="number" min="1" pattern="^[0-9]+" name="pag">|<button name="pagi" id="pagi" class="btn btn-danger"> Guardar </button>
 
  </section>
   <?php
@@ -129,7 +135,7 @@ background-color: #FFFFFF;
   foreach ($datos['swiddi1'] as $key){ ?>
  
     
-    <table id="tabla" class="egt" style="width: 100%">
+    <table id="tabla" class="center" style="width: 90%">
     <br>
     <br>
     <h2 style="text-align: center; "><?php $c= $key->Tables_in_swiddi1;$c1=trim($c,"'"); echo $c1; ?>  | <button value="<?=$key->Tables_in_swiddi1?>" type="submit" name="drop"><i class="fas fa-calendar-times"></i></button></h2> 
