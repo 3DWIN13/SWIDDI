@@ -76,18 +76,27 @@
         <li class="menu-active"><a href="http://localhost/SWIDDI/ControlAdmin">Inicio</a></li>
         <li><a href="http://localhost/SWIDDI/ControlTrabajos">Crear categorias</a></li>
           <li><a href="http://localhost/SWIDDI/ControlCreacion">Crear trabajos</a></li>
-          <li><a href="http://localhost/SWIDDI/ControlUsuarios">Pagina de usuario</a></li>
+          <li><a href="http://localhost/SWIDDI/ControlUsuarios?pagina=1">Pagina de usuario</a></li>
           <li><a href="http://localhost/SWIDDI">Salir</a></li>
         </ul>
       </nav>
       
     </div>
   </header>
+
+  
+
   <section id="contact">
 
- <form action="http://localhost/SWIDDI/ControlEdit" method="post"> 
+  
+
+ <form action="http://localhost/SWIDDI/ControlEdit" method="post">
+  
+  <input id="pag" type="number" min="1" pattern="^[0-9]+" name="pag">|<button name="pagi" id="pagi" class="btn btn-danger"> guardar </button>
+
  </section>
   <?php
+  
   
   /***************
    * 
