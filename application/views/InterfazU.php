@@ -25,11 +25,11 @@ foreach ($datos['swiddi1'] as $key) {
   //var_dump($data);
   //var_dump($datos);
 }
-//if (isset($_COOKIE["saladita"])) {
+if (isset($_COOKIE["saladita"])) {
   $configA = $_COOKIE["saladita"];
-//} else {
-  //$configA = 2;
-//}
+} else {
+  $configA = 2;
+}
 
 
 $p = $i / $configA;
@@ -188,7 +188,7 @@ $paginas = ceil($p);
       <form action="ControlPlantilla" method="post">
 
         <div class="col-sm-8" style="margin-left: 17%">
-       
+        
           <?php
 
           /***************
@@ -210,7 +210,8 @@ $paginas = ceil($p);
           //var_dump($ditis);
 
           foreach ($ditis['swidi'] as $key) { ?>
- <table id="tabla" class="egt" style="width: 100%">
+
+<table id="tabla" class="egt" style="width: 100%">
 
             
               <br>
