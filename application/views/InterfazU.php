@@ -25,11 +25,11 @@ foreach ($datos['swiddi1'] as $key) {
   //var_dump($data);
   //var_dump($datos);
 }
-if(isset($_COOKIE["saladita"])){
-  $configA=$_COOKIE["saladita"];
-}else{
-  $configA= 2;
-}
+//if (isset($_COOKIE["saladita"])) {
+  $configA = $_COOKIE["saladita"];
+//} else {
+  //$configA = 2;
+//}
 
 
 $p = $i / $configA;
@@ -93,27 +93,32 @@ $paginas = ceil($p);
   <link href="css/diseño.css" rel="stylesheet">
 
   <style type="text/css">
-table, th,td{
-border: 1px solid black;
-}
+    table,
+    th,
+    td {
+      border: 1px solid black;
+    }
 
-th, td{
-    padding:15px;
-}
+    th,
+    td {
+      padding: 15px;
+    }
 
-th, td{
-    text-align: left;
-    
-}
-th{
-  background-color: #5f5e5d;
-  color: #ffffff;
-}
-td{
-  background-color: #c7c4c4;
-}
+    th,
+    td {
+      text-align: left;
 
-</style>
+    }
+
+    th {
+      background-color: #5f5e5d;
+      color: #ffffff;
+    }
+
+    td {
+      background-color: #c7c4c4;
+    }
+  </style>
 
 </head>
 
@@ -121,7 +126,7 @@ td{
   <!--==========================
   Header Section
   ============================-->
-  
+
   <header id="header">
     <div class="container">
 
@@ -130,8 +135,8 @@ td{
 
       </div>
       <?php
- 
-  ?>
+
+      ?>
       <nav id="nav-menu-container">
         <ul class="nav-menu">
           <li class="menu-active"><a href="http://localhost/SWIDDI/ControlUsuarios?pagina=1">Inicio</a></li>
@@ -143,8 +148,8 @@ td{
                                                         echo $c1; ?>"><a href="ControlPlantilla2?envio=<?php $c = $key->Tables_in_swiddi1;
                                                                                                         $c1 = trim($c, "'");
                                                                                                         echo $c1; ?>"><?php $c = $key->Tables_in_swiddi1;
-                                                                                                                                                                        $c1 = trim($c, "'");
-                                                                                                                                                                        echo $c1; ?></a></li>
+                                                                                                                      $c1 = trim($c, "'");
+                                                                                                                      echo $c1; ?></a></li>
               <?php endforeach ?>
             </ul>
 
@@ -183,6 +188,7 @@ td{
       <form action="ControlPlantilla" method="post">
 
         <div class="col-sm-8" style="margin-left: 17%">
+       
           <?php
 
           /***************
@@ -195,66 +201,66 @@ td{
           /*$datos['sysobjects'] = $this->Modelo->cargar2();*/
 
 
-          $iniciar = ($_GET['pagina']-1)*$configA;
+          $iniciar = ($_GET['pagina'] - 1) * $configA;
 
           //echo $iniciar;
           $ditis = array();
-          $ditis['swidi']=$this->Modelo->cargar5($iniciar,$configA);
-      
+          $ditis['swidi'] = $this->Modelo->cargar5($iniciar, $configA);
+
           //var_dump($ditis);
-      
-        foreach ($ditis['swidi'] as $key) {?>
+
+          foreach ($ditis['swidi'] as $key) { ?>
+ <table id="tabla" class="egt" style="width: 100%">
+
             
+              <br>
+              <br>
 
-            <table id="tabla" class="egt" style="width: 100%">
-            <br>
-            <br>
+              <h2 style="text-align: center; "><?php $c = $key->TABLE_NAME;
+                                                $c1 = trim($c, "'");
+                                                echo $c1; ?></h2>
 
-            <h2 style="text-align: center; "><?php $c = $key->TABLE_NAME;
-                                              $c1 = trim($c, "'");
-                                              echo $c1; ?></h2>
+              <input type="hidden" name="cat" value="<?= $key->TABLE_NAME ?>">
 
-            <input type="hidden" name="cat" value="<?= $key->TABLE_NAME ?>">
+              <div class="container">
+                <div class="row align-items-center">
 
-            <div class="container">
-              <div class="row align-items-center">
-            
-                    <tr>
-                
-                 <th>Location </th>
-               
-                
-                  <th>Position</th>
-               
-                 <th>Company</th>
-               
-                  <th>More information</th>
-                
+                  <tr>
 
-                </tr>
+                    <th>Location </th>
 
 
+                    <th>Position</th>
 
-            <?php
-            $data['objects'] = $this->Modelo->cargar2($key->TABLE_NAME);
-            foreach ($data['objects'] as $key) {
+                    <th>Company</th>
 
-            ?>
-
-              <tr>
-
-                  
-                    <td><?= $key->location ?></td>
-                  
-                    <td><?= $key->position ?></td>
-                  
-                    <td><?= $key->company ?></td>
-                 
+                    <th>More information</th>
 
 
-                  
-                  <td><button value="<?= $key->id, ',', $key->category ?>" type="submit" name="editar"><i class="fas fa-info-circle"></i></button></td>
                   </tr>
+
+
+
+                  <?php
+                  $data['objects'] = $this->Modelo->cargar2($key->TABLE_NAME);
+                  foreach ($data['objects'] as $key) {
+
+                  ?>
+
+                    <tr>
+
+
+                      <td><?= $key->location ?></td>
+
+                      <td><?= $key->position ?></td>
+
+                      <td><?= $key->company ?></td>
+
+
+
+
+                      <td><button value="<?= $key->id, ',', $key->category ?>" type="submit" name="editar"><i class="fas fa-info-circle"></i></button></td>
+                    </tr>
                 </div>
               </div>
 
@@ -263,12 +269,13 @@ td{
 
             <?php } ?>
           <?php } ?>
-          </table>
+            </table>
 
-          <!--==========================
+            <!--==========================
   pagiinacion
 ============================-->
 
+<<<<<<< HEAD
           <nav aria-label="Page navigation example">
             <ul class="pagination">
             <li class="page-item <?= $_GET['pagina']<='1'? 'disabled':'' ?>">
@@ -282,11 +289,19 @@ td{
                 <li class="page-item <?php echo $_GET['pagina']==$i+1 ? 'active' : '' ?>">
                   <a class="page-link"  href="http://localhost/SWIDDI/ControlUsuarios?pagina=<th><?= $i + 1 ?></th>">
                     <?= $i + 1 ?>
+=======
+            <nav aria-label="Page navigation example">
+              <ul class="pagination">
+                <li class="page-item <?= $_GET['pagina'] <= '1' ? 'disabled' : '' ?>">
+                  <a class="page-link" style="background-color: #aa9f9d;" href="http://localhost/SWIDDI/ControlUsuarios?pagina=<?= $_GET['pagina'] - 1 ?>">
+                    <th>Previous</th>
+>>>>>>> 35a334cd439657a6a273b5cd4860e589d6f66d45
                   </a>
                 </li>
 
-              <?php endfor ?>
+                <?php for ($i = 0; $i < $paginas; $i++) : ?>
 
+<<<<<<< HEAD
               <li class="page-item <?= $_GET['pagina']>=$paginas? 'disabled':'' ?>">
                 <a class="page-link"  
                 href="http://localhost/SWIDDI/ControlUsuarios?pagina=<?= $_GET['pagina'] + 1 ?>">
@@ -295,16 +310,33 @@ td{
             </li>
             </ul>
           </nav>
+=======
+                  <li class="page-item <?php echo $_GET['pagina'] == $i + 1 ? 'active' : '' ?>">
+                    <a class="page-link" style="background-color: #aa9f9d;" href="http://localhost/SWIDDI/ControlUsuarios?pagina=<?= $i + 1 ?>">
+                      <?= $i + 1 ?>
+                    </a>
+                  </li>
+>>>>>>> 35a334cd439657a6a273b5cd4860e589d6f66d45
+
+                <?php endfor ?>
+
+                <li class="page-item <?= $_GET['pagina'] >= $paginas ? 'disabled' : '' ?>">
+                  <a class="page-link" style="background-color: #aa9f9d;" href="http://localhost/SWIDDI/ControlUsuarios?pagina=<?= $_GET['pagina'] + 1 ?>">
+                    Next
+                  </a>
+                </li>
+              </ul>
+            </nav>
 
 
-          <!--==========================
+            <!--==========================
   pagiinacion
 ============================-->
 
 
-          </nav>
+            </nav>
         </div>
-        
+
       </form>
 
 
