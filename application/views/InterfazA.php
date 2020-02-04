@@ -120,7 +120,7 @@ td{
   padding: 10px;
   border: 2px solid black;
   font-weight: 600;
-  background color: white;
+  background-color: white;
   color:black;
   border-radius: 8px;" 
   id="Massag" type="number" placeholder="Ingrese el numero de paginación" min="1" pattern="^[0-9]+" name="pag"> 
