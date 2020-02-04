@@ -95,7 +95,6 @@ $paginas = ceil($p);
   <style type="text/css">
 table, th,td{
 border: 1px solid black;
-border-collapse: collapse;
 }
 
 th, td{
@@ -104,10 +103,16 @@ th, td{
 
 th, td{
     text-align: left;
+    
 }
-table#tabla{
-background-color: #FFFFFF;
+th{
+  background-color: #5f5e5d;
+  color: #ffffff;
 }
+td{
+  background-color: #c7c4c4;
+}
+
 </style>
 
 </head>
@@ -267,15 +272,15 @@ background-color: #FFFFFF;
           <nav aria-label="Page navigation example">
             <ul class="pagination">
             <li class="page-item <?= $_GET['pagina']<='1'? 'disabled':'' ?>">
-                <a class="page-link" href="http://localhost/SWIDDI/ControlUsuarios?pagina=<?= $_GET['pagina'] - 1 ?>">
-                  Previous
+                <a class="page-link" style="background-color: #5f5e5d;" href="http://localhost/SWIDDI/ControlUsuarios?pagina=<?= $_GET['pagina'] - 1 ?>">
+                  <th>Previous</th>
                 </a>
               </li>
 
               <?php for ($i = 0; $i < $paginas; $i++) : ?>
 
                 <li class="page-item <?php echo $_GET['pagina']==$i+1 ? 'active' : '' ?>">
-                  <a class="page-link" href="http://localhost/SWIDDI/ControlUsuarios?pagina=<?= $i + 1 ?>">
+                  <a class="page-link" style="background-color: #5f5e5d;" href="http://localhost/SWIDDI/ControlUsuarios?pagina=<th><?= $i + 1 ?></th>">
                     <?= $i + 1 ?>
                   </a>
                 </li>
@@ -283,7 +288,7 @@ background-color: #FFFFFF;
               <?php endfor ?>
 
               <li class="page-item <?= $_GET['pagina']>=$paginas? 'disabled':'' ?>">
-                <a class="page-link"  
+                <a class="page-link" style="background-color: #5f5e5d;" 
                 href="http://localhost/SWIDDI/ControlUsuarios?pagina=<?= $_GET['pagina'] + 1 ?>">
                 Next
               </a>
@@ -299,7 +304,7 @@ background-color: #FFFFFF;
 
           </nav>
         </div>
-       
+        
       </form>
 
 

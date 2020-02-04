@@ -56,9 +56,6 @@
     <style type="text/css">
 table, th,td{
 border: 1px solid black;
-border-collapse: collapse;
-
-
 }
 
 th, td{
@@ -67,11 +64,16 @@ th, td{
 
 th, td{
     text-align: left;
+    
 }
-table#tabla{
-background-color: #FFFFFF;
+th{
+  background-color: #5f5e5d;
+  color: #ffffff;
+}
+td{
+  background-color: #c7c4c4;
+}
 
-}
 </style>
 
 </head>
@@ -103,11 +105,7 @@ background-color: #FFFFFF;
 
   
 
-<<<<<<< HEAD
-  <section id="contact" >
-=======
   <section id="contact" class="col-sm-12">
->>>>>>> eacdb41c9821718237d2023a883ce9c839b404cc
 
   
 
@@ -138,7 +136,7 @@ background-color: #FFFFFF;
   foreach ($datos['swiddi1'] as $key){ ?>
  
     
-    <table id="tabla" class="center" style="width: 90%">
+    <table id="tabla" class="center" style="width: 98%">
     <br>
     <br>
     <h2 style="text-align: center; "><?php $c= $key->Tables_in_swiddi1;$c1=trim($c,"'"); echo $c1; ?>  | <button value="<?=$key->Tables_in_swiddi1?>" type="submit" name="drop"><i class="fas fa-calendar-times"></i></button></h2> 

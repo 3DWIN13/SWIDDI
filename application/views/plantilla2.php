@@ -47,7 +47,6 @@
     <style type="text/css">
 table, th,td{
 border: 1px solid black;
-border-collapse: collapse;
 }
 
 th, td{
@@ -56,9 +55,14 @@ th, td{
 
 th, td{
     text-align: left;
+    
 }
-table#tabla{
-background-color: #FFFFFF;
+th{
+  background-color: #5f5e5d;
+  color: #ffffff;
+}
+td{
+  background-color: #c7c4c4;
 }
 </style>
 
