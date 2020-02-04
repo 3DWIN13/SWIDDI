@@ -103,11 +103,7 @@ background-color: #FFFFFF;
 
   
 
-<<<<<<< HEAD
-  <section id="contact" >
-=======
   <section id="contact" class="col-sm-12">
->>>>>>> eacdb41c9821718237d2023a883ce9c839b404cc
 
   
 
