@@ -88,9 +88,22 @@ $paginas = ceil($p);
   <link href="css/diseño.css" rel="stylesheet">
 
   <style type="text/css">
+table, th,td{
+border: 1px solid black;
+border-collapse: collapse;
+}
 
+th, td{
+    padding:15px;
+}
 
-  </style>
+th, td{
+    text-align: left;
+}
+table#tabla{
+background-color: #FFFFFF;
+}
+</style>
 
 </head>
 
@@ -181,6 +194,9 @@ $paginas = ceil($p);
           //var_dump($ditis);
       
         foreach ($ditis['swidi'] as $key) {?>
+            
+
+            <table id="tabla" class="egt" style="width: 100%">
             <br>
             <br>
 
@@ -190,24 +206,23 @@ $paginas = ceil($p);
 
             <input type="hidden" name="cat" value="<?= $key->TABLE_NAME ?>">
 
-
-            <div class="container" style="background-color: #839192 ">
+            <div class="container">
               <div class="row align-items-center">
+            
+                    <tr>
+                
+                 <th>Location </th>
+               
+                
+                  <th>Position</th>
+               
+                 <th>Company</th>
+               
+                  <th>More information</th>
+                
 
-                <div class="col" style="border:1px solid;">
-                  Location
-                </div>
-                <div class="col" style="border:1px solid;">
-                  Position
-                </div>
-                <div class="col" style="border:1px solid;">
-                  Company
-                </div>
-                <div class="col" style="border:1px solid;">
-                  More information
-                </div>
-              </div>
-            </div>
+                </tr>
+
 
 
             <?php
@@ -216,23 +231,20 @@ $paginas = ceil($p);
 
             ?>
 
-              <div class="container" style="background-color: #B3B6B7;border:1px solid ">
-                <div class="row align-items-center">
+              <tr>
 
-                  <div class="col">
-                    <?= $key->location ?>
-                  </div>
-                  <div class="col">
-                    <?= $key->position ?>
-                  </div>
-                  <div class="col">
-                    <?= $key->company ?>
-                  </div>
+                  
+                    <td><?= $key->location ?></td>
+                  
+                    <td><?= $key->position ?></td>
+                  
+                    <td><?= $key->company ?></td>
+                 
 
 
-                  <div class="col">
-                    <button value="<?= $key->id, ',', $key->category ?>" type="submit" name="editar"><i class="fas fa-info-circle"></i></button>
-                  </div>
+                  
+                  <td><button value="<?= $key->id, ',', $key->category ?>" type="submit" name="editar"><i class="fas fa-info-circle"></i></button></td>
+                  </tr>
                 </div>
               </div>
 
@@ -241,6 +253,7 @@ $paginas = ceil($p);
 
             <?php } ?>
           <?php } ?>
+          </table>
 
           <!--==========================
   pagiinacion
@@ -281,7 +294,7 @@ $paginas = ceil($p);
 
           </nav>
         </div>
-
+       
       </form>
 
 

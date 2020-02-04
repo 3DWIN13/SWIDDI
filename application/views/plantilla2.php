@@ -45,9 +45,22 @@
     <link href="css/diseño.css" rel="stylesheet">
 
     <style type="text/css">
-    
-		
-		</style>
+table, th,td{
+border: 1px solid black;
+border-collapse: collapse;
+}
+
+th, td{
+    padding:15px;
+}
+
+th, td{
+    text-align: left;
+}
+table#tabla{
+background-color: #FFFFFF;
+}
+</style>
 
 </head>
 
@@ -121,24 +134,19 @@ $elfinal = "'$envio'";
     
     <input type="hidden" name="cat" value="">
     
-
-    <div class="container" style="background-color: #839192 ">
+    <table id="tabla" class="egt" style="width: 100%">
+    <div class="container">
   <div class="row align-items-center">
-  
-    <div class="col" style="border:1px solid;">
-    Location
-    </div>
-    <div class="col" style="border:1px solid;">
-    Position
-    </div>
-    <div class="col" style="border:1px solid;">
-    Company
-    </div>
-    <div class="col" style="border:1px solid;">
-   More information 
-    </div>
-  </div>
-</div>
+   <tr>
+    
+    <th>Location</th>
+    
+    <th>Position</th>
+    
+    <th>Company</th>
+    
+    <th>More information</th>
+    
   
 
 
@@ -148,23 +156,17 @@ $dati['objects'] = $this->Modelo->cargar2($elfinal);
   
   ?>
  
- <div class="container" style="background-color: #B3B6B7;border:1px solid " >
-  <div class="row align-items-center">
+ <tr>
     
-    <div class="col" >
-    <?=$key->location?>
-    </div>
-    <div class="col">
-    <?=$key->position?>
-    </div>
-    <div class="col">
-    <?=$key->company?>
-    </div>
-  
+
+    <td><?=$key->location?></td>
     
-    <div class="col">
-    <button value="<?=$key->id,',', $key->category?>" type="submit" name="editar"><i class="fas fa-info-circle"></i></button>
-    </div>
+    <td><?=$key->position?></td>
+    
+    <td><?=$key->company?></td>
+   
+    <td><button value="<?=$key->id,',', $key->category?>" type="submit" name="editar"><i class="fas fa-info-circle"></i></button></td>
+    
   </div>
 </div>
   
@@ -173,7 +175,7 @@ $dati['objects'] = $this->Modelo->cargar2($elfinal);
 
 <?php } ?>
    
-  </div>
+  </table>
 
   </form>
  

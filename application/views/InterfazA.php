@@ -54,8 +54,22 @@
 
 
     <style type="text/css">
-		
-		</style>
+table, th,td{
+border: 1px solid black;
+border-collapse: collapse;
+}
+
+th, td{
+    padding:15px;
+}
+
+th, td{
+    text-align: left;
+}
+table#tabla{
+background-color: #FFFFFF;
+}
+</style>
 
 </head>
 
@@ -113,42 +127,39 @@
 
   $datos['swiddi1'] = $this->Modelo->cargar();
   foreach ($datos['swiddi1'] as $key){ ?>
- <br>
-    <br>
+ 
     
+    <table id="tabla" class="egt" style="width: 100%">
+    <br>
+    <br>
     <h2 style="text-align: center; "><?php $c= $key->Tables_in_swiddi1;$c1=trim($c,"'"); echo $c1; ?>  | <button value="<?=$key->Tables_in_swiddi1?>" type="submit" name="drop"><i class="fas fa-calendar-times"></i></button></h2> 
     
     <input type="hidden" name="cat" value="<?=$key->Tables_in_swiddi1?>">
-    
-
-    <div class="container" style="background-color: #839192 ">
+    <div class="container">
   <div class="row align-items-center">
-    <div class="col" style="border:1px solid;">
-      # 
-    </div>
-    <div class="col" style="border:1px solid;">
-    Location
-    </div>
-    <div class="col" style="border:1px solid;">
-    Position
-    </div>
-    <div class="col" style="border:1px solid;">
-    Company
-    </div>
-    <div class="col" style="border:1px solid;">
-    Description
-    </div>
-    <div class="col" style="border:1px solid;">
-    How to apply
-    </div>
-    <div class="col" style="border:1px solid;">
-    Category
-    </div>
-    <div class="col" style="border:1px solid;">
-   operation
-    </div>
-  </div>
-</div>
+  
+  
+  <tr>
+  
+     <th>#</th>
+ 
+    <th>Location</th>
+    
+    <th>Position</th>
+   
+    <th>Company</th>
+    
+    <th>Description</th>
+  
+    <th>How to apply</th>
+    
+    <th>Category</th>
+    
+   <th>Operation</th>
+    
+    </tr>
+    
+    
   
 
 <?php
@@ -157,43 +168,37 @@
   
   ?>
  
- <div class="container" style="background-color: #B3B6B7;border:1px solid " >
-  <div class="row align-items-center">
-    <div class="col" >
-    <?=$key->id?>
-    </div>
-    <div class="col" >
-    <?=$key->location?>
-    </div>
-    <div class="col">
-    <?=$key->position?>
-    </div>
-    <div class="col">
-    <?=$key->company?>
-    </div>
-    <div class="col">
-    <?=$key->description?>
-    </div>
-    <div class="col">
-    <?=$key->howtoapply?>
-    </div>
-    <div class="col">
-    <?=$key->category?>
-    </div>
-    
-    <div class="col">
-    <button value="<?=$key->id,',', $key->category?>" type="submit" name="editar"><i class="fas fa-edit"></i></button> | <button value="<?=$key->id,',', $key->category?>" type="submit" name="dell"><i class="fas fa-user-times"></i></button>
-    </div>
-  </div>
-</div>
+ 
+  <tr>
   
+  
+    <td><?=$key->id?></td>
     
-
+    <td><?=$key->location?></td>
+    
+    <td><?=$key->position?></td>
+    
+    <td><?=$key->company?></td>
+   
+    <td><?=$key->description?></td>
+    
+    <td><?=$key->howtoapply?></td>
+    
+    <td><?=$key->category?></td>
+   
+    
+   
+    <td><button value="<?=$key->id,',', $key->category?>" type="submit" name="editar"><i class="fas fa-edit"></i></button> | <button value="<?=$key->id,',', $key->category?>" type="submit" name="dell"><i class="fas fa-user-times"></i></button></td>
+    
+   </tr>
+   </div>
+</div>
 
 <?php } ?>
    <?php } ?>
-
-
+   
+  
+</table>
   </form>
  
 
