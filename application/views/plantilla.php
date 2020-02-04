@@ -60,7 +60,7 @@
     
       <nav id="nav-menu-container">
         <ul class="nav-menu">
-        <li class="menu-active"><a href="http://localhost/SWIDDI/ControlUsuarios">Inicio</a></li>
+        <li class="menu-active"><a href="http://localhost/SWIDDI/ControlUsuarios?pagina=1">Inicio</a></li>
           <li><a href="http://localhost/SWIDDI">Salir</a></li>
         </ul>
       </nav>
@@ -123,7 +123,7 @@
   
 </div>
 <div class="container text-center">
-<a href="http://localhost/SWIDDI/ControlUsuarios"><input type="button" value="Atras"></a>
+<a href="http://localhost/SWIDDI/ControlUsuarios?pagina=1"><input type="button" value="Atras"></a>
 </div>
 
 <?php  } ?>
