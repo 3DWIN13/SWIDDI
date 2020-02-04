@@ -60,6 +60,11 @@ $str2 = "'$str[1]'";
                          $this->Modelo->drop($_POST['drop']);
                           $this->load->view('mensage');
                   }
+
+                  if(isset($_POST['pagi'])){
+                      setcookie("saladita", $_POST['pag'], time()+86400);
+                      $this->load->view('mensage');
+                  }
     }
     public function editaruntrabajo(){
       
