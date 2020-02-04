@@ -15,6 +15,7 @@ class ControlUsuarios extends CI_Controller {
 	{
 		$data = array();
 
+		
 		$data['swiddi1'] = $this->Modelo->cargar();
 		$this->load->view('InterfazU.php',$data);
 	}
