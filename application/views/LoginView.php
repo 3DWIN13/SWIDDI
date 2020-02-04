@@ -48,7 +48,7 @@
 <input type="submit"  value="Iniciar Sesion">
 
 
-<a href="http://localhost/SWIDDI/ControlUsuarios">Pagina de usuarios</a><br>
+<a href="http://localhost/SWIDDI/ControlUsuarios?pagina=1">Pagina de usuarios</a><br>
 <a href="http://localhost/SWIDDI">Volver</a>
 
 </form>
