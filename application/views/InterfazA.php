@@ -100,7 +100,7 @@ background-color: #FFFFFF;
 
   
 
-  <section id="contact">
+  <section id="contact" class="col-sm-12">
 
   
 
@@ -108,7 +108,7 @@ background-color: #FFFFFF;
   
   <input id="pag" type="number" min="1" pattern="^[0-9]+" name="pag">|<button name="pagi" id="pagi" class="btn btn-danger"> guardar </button>
 
- </section>
+
   <?php
   
   
@@ -202,7 +202,7 @@ background-color: #FFFFFF;
   </form>
  
 
-
+  </section>
     <!--==========================
   Footer
 ============================-->
