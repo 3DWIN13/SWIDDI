@@ -25,7 +25,12 @@ foreach ($datos['swiddi1'] as $key) {
   //var_dump($data);
   //var_dump($datos);
 }
-$configA=$_COOKIE["saladita"];
+if(isset($_COOKIE["saladita"])){
+  $configA=$_COOKIE["saladita"];
+}else{
+  $configA= 2;
+}
+
 
 $p = $i / $configA;
 
