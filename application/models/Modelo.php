@@ -73,10 +73,22 @@ class Modelo extends CI_Model {
        }
 /*****SELECT * FROM `'$latabla'` */
      
+   
+
+    function cargar4($latabla,$inicio,$final){
+        $query = $this->db->query("SELECT * FROM `$latabla` LIMIT $inicio,$final");
+
+        return $query->result();
+
+    } 
+    function cargar5($inicio,$final){
+        $query = $this->db->query("SELECT * FROM INFORMATION_SCHEMA.tables WHERE TABLE_SCHEMA='swiddi1' LIMIT $inicio,$final");
+
+        return $query->result();
+
     }
 
-
-
+ }
 /* End of file Controllername.php 
 `id` int(11) NOT NULL AUTO_INCREMENT,
             `location` varchar(100) NOT NULL,
