@@ -136,7 +136,7 @@ td{
   
    <div class="col-md-6">
    <h5 style="margin-left:20%;">Ingresa el numero limite que se puede ver la informacion en una categoria</h5> <br>
-  <input style="width: 30%;
+  <input style="width: 33%;
   margin-left:20%;
   padding: 10px;
   border: 2px solid black;
@@ -144,7 +144,7 @@ td{
   background-color: white;
   color:black;
   border-radius: 8px;" 
-  id="Massag" type="number" placeholder="Ingrese el numero de paginación" min="1" pattern="^[0-9]+" name="more"> 
+  id="Massag" type="number" placeholder="Ingrese el numero de registros a mostrar" min="1" pattern="^[0-9]+" name="more"> 
    <button name="more1" id="more1" 
    style="font:bold 24px Arial; text-decoration: none; color:white; border:solid 1.5px black;
    border-radius: 8px;"
