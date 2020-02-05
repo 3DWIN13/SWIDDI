@@ -65,6 +65,11 @@ $str2 = "'$str[1]'";
                       setcookie("saladita", $_POST['pag'], time()+86400);
                       $this->load->view('mensage');
                   }
+
+                  if(isset($_POST['more1'])){
+                      setcookie("oreo", $_POST['more'],time()+86400);
+                      $this->load->view('mensage');
+                  }
     }
     public function editaruntrabajo(){
       
