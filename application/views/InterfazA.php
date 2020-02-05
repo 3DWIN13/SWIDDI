@@ -115,7 +115,7 @@ td{
  <form action="http://localhost/SWIDDI/ControlEdit" method="post">
  <div>
   .
-  <div>
+ </div>
   <input style="width: 13%;
   padding: 10px;
   border: 2px solid black;
@@ -129,6 +129,24 @@ td{
    border-radius: 8px;"
    hover="background: white; color: white;" 
    class="btn btn-danger"> Guardar </button>
+
+   <!--el boton de morejobs-->
+   <div>
+  .
+ </div>
+  <input style="width: 13%;
+  padding: 10px;
+  border: 2px solid black;
+  font-weight: 600;
+  background-color: white;
+  color:black;
+  border-radius: 8px;" 
+  id="Massag" type="number" placeholder="Ingrese el numero de paginación" min="1" pattern="^[0-9]+" name="more"> 
+   <button name="more1" id="more1" 
+   style="font:bold 24px Arial; text-decoration: none; color:white; border:solid 1.5px black;
+   border-radius: 8px;"
+   hover="background: white; color: white;" 
+   class="btn btn-danger"> guardar </button>
   
 
   <?php
