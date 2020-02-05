@@ -180,6 +180,12 @@ $dati['objects'] = $this->Modelo->cargar2($elfinal);
 <?php } ?>
    
   </table>
+  <div>
+  .
+  </div>
+  <div class="container text-center">
+<a href="http://localhost/SWIDDI/ControlUsuarios?pagina=1"><input type="button" value="Atras"></a>
+</div>
 
   </form>
  

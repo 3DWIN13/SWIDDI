@@ -51,7 +51,7 @@
 
       <nav id="nav-menu-container">
         <ul class="nav-menu">
-          <li class="menu-active"><a href="http://localhost/SWIDDI/ControlAdmin">inicio</a></li>
+          <li class="menu-active"><a href="http://localhost/SWIDDI/ControlAdmin">Inicio</a></li>
           <li><a href="http://localhost/SWIDDI/ControlTrabajos">Crear categorias</a></li>
           <li><a href="#">Crear trabajos</a></li>
           <li><a href="http://localhost/SWIDDI/ControlUsuarios?pagina=1">Pagina de usuario</a></li>
@@ -87,7 +87,15 @@
       <div class="form">
         <form action="http://localhost/SWIDDI/ControlCreacion/guardar" class="form_contact" method="post">
           <div class="form-group">
-            <select class="form-control" style="width: 50%;margin-left:25%; text-align:center" name="cbo" id="cbo">
+            <select class="form-control" style="width: 50%; margin-left:25%; text-align:center;
+            
+  
+            padding: 10px;
+            border: 2px solid black;
+            font-weight: 600;
+            background-color: white;
+            color:black;
+            border-radius: 8px; text-align:center; border-color: turquoise;" name="cbo" id="cbo">
             
 
             <?php foreach($swiddi1 as $key): ?>
@@ -96,27 +104,67 @@
             </select>
           </div>
           <div class="form-group">
-            <input style="width: 50%;margin-left:25%; text-align:center" type="text" name="location" class="form-control" id="location" placeholder="Localidad del trabajo"  required />
+            <input style="width: 50%; margin-left:25%; text-align:center;
+            
+  
+  padding: 10px;
+  border: 2px solid black;
+  font-weight: 600;
+  background-color: white;
+  color:black;
+  border-radius: 8px; text-align:center; border-color: turquoise;" type="text" name="location" class="form-control" id="location" placeholder="Localidad del trabajo"  required />
           </div>
 
           <div class="form-group">
-            <input style="width: 50%;margin-left:25%; text-align:center" type="text" name="position" class="form-control" id="position" placeholder="Posicion en el empleo" required />
+            <input style="width: 50%; margin-left:25%; text-align:center;
+            
+  
+            padding: 10px;
+            border: 2px solid black;
+            font-weight: 600;
+            background-color: white;
+            color:black;
+            border-radius: 8px; text-align:center; border-color: turquoise;" type="text" name="position" class="form-control" id="position" placeholder="Posicion en el empleo" required />
           </div>
 
           <div class="form-group">
-            <input style="width: 50%;margin-left:25%; text-align:center" type="text" name="company" class="form-control" id="company" placeholder="Compañia que ofrece el empleo" required />
+            <input style="width: 50%; margin-left:25%; text-align:center;
+            
+  
+            padding: 10px;
+            border: 2px solid black;
+            font-weight: 600;
+            background-color: white;
+            color:black;
+            border-radius: 8px; text-align:center; border-color: turquoise;" type="text" name="company" class="form-control" id="company" placeholder="Compañia que ofrece el empleo" required />
           </div>
 
 
           
           <div class="form-group">
-            <input style="width: 50%;margin-left:25%; text-align:center" type="text" name="howtoapply" class="form-control" id="howtoapply" placeholder="Como aplicar al trabajo" required />
+            <input style="width: 50%; margin-left:25%; text-align:center;
+            
+  
+            padding: 10px;
+            border: 2px solid black;
+            font-weight: 600;
+            background-color: white;
+            color:black;
+            border-radius: 8px; text-align:center; border-color: turquoise;" type="text" name="howtoapply" class="form-control" id="howtoapply" placeholder="Como aplicar al trabajo" required />
           </div>
 
           
           
           <div class="form-group">
-            <textarea style="resize: none;width: 50%;margin-left:25%; text-align:center" type="text" name="description" class="form-control" id="description" placeholder="Descripcion" required ></textarea>
+            <textarea style="width: 50%; margin-left:25%; text-align:center;
+            
+  
+            padding: 10px;
+            border: 2px solid black;
+            font-weight: 600;
+            background-color: white;
+            color:black;
+            border-radius: 8px; text-align:center; border-color: turquoise;" type="text" name="description" class="form-control" id="description" placeholder="Descripcion" required ></textarea>
           </div>
           
           <br>

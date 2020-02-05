@@ -83,7 +83,15 @@
         <form action="http://localhost/SWIDDI/ControlTrabajos/crearT" class="form_contact" method="post">
           <div class="form-group">
 
-            <input style="width: 50%;margin-left:25%;text-align:center; border-color: turquoise;" type="text" class="form-control" id="NombreCategoria" name="NombreCategoria" placeholder="Nombre de la categoria" required>
+            <input style="width: 50%; margin-left:25%; text-align:center;
+            
+  
+            padding: 10px;
+            border: 2px solid black;
+            font-weight: 600;
+            background-color: white;
+            color:black;
+            border-radius: 8px; text-align:center; border-color: turquoise;" type="text" class="form-control" id="NombreCategoria" name="NombreCategoria" placeholder="Nombre de la categoria" required>
             <div class="invalid-feedback">
             </div>
             <div>

@@ -115,7 +115,7 @@ td{
  <form action="http://localhost/SWIDDI/ControlEdit" method="post">
   <br>
  <div class="col-md-6">
-   <h3 style="margin-left:20%;">Ingresa el numero de paginacion</h3> <br>
+   <h3 style="margin-left:20%;"></h3> <br>
   <input style="width: 30%;
   margin-left:20%;
   padding: 10px;
@@ -129,13 +129,13 @@ td{
    style="font:bold 24px Arial; text-decoration: none; color:white; border:solid 1.5px black;
    border-radius: 8px;"
    hover="background: white; color: white;" 
-   class="btn btn-danger"> Guardar </button>
+   class="btn btn-danger"> Enviar </button>
 </div>
    <!--el boton de morejobs-->
 
   
    <div class="col-md-6">
-   <h5 style="margin-left:20%;">Ingresa el numero limite que se puede ver la informacion en una categoria</h5> <br>
+   <h5 style="margin-left:20%;"></h5> <br>
   <input style="width: 33%;
   margin-left:20%;
   padding: 10px;
@@ -149,7 +149,7 @@ td{
    style="font:bold 24px Arial; text-decoration: none; color:white; border:solid 1.5px black;
    border-radius: 8px;"
    hover="background: white; color: white;" 
-   class="btn btn-danger"> Guardar </button>
+   class="btn btn-danger"> Enviar </button>
   </div>
 
   <br><br><br><br>
