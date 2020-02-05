@@ -75,8 +75,8 @@ class Modelo extends CI_Model {
      
    
 
-    function cargar4($latabla,$inicio,$final){
-        $query = $this->db->query("SELECT * FROM `$latabla` LIMIT $inicio,$final");
+    function cargar4($latabla,$final){
+        $query = $this->db->query("SELECT * FROM `$latabla` LIMIT $final");
 
         return $query->result();
 
