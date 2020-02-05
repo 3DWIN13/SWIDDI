@@ -279,7 +279,7 @@ $paginas = ceil($p);
             <nav aria-label="Page navigation example">
               <ul class="pagination">
                 <li class="page-item <?= $_GET['pagina'] <= '1' ? 'disabled' : '' ?>">
-                  <a class="page-link" style="background-color: #aa9f9d;" href="http://localhost/SWIDDI/ControlUsuarios?pagina=<?= $_GET['pagina'] - 1 ?>">
+                  <a class="page-link" href="http://localhost/SWIDDI/ControlUsuarios?pagina=<?= $_GET['pagina'] - 1 ?>">
                     <th>Previous</th>
                   </a>
                 </li>
@@ -287,7 +287,7 @@ $paginas = ceil($p);
                 <?php for ($i = 0; $i < $paginas; $i++) : ?>
 
                   <li class="page-item <?php echo $_GET['pagina'] == $i + 1 ? 'active' : '' ?>">
-                    <a class="page-link" style="background-color: #aa9f9d;" href="http://localhost/SWIDDI/ControlUsuarios?pagina=<?= $i + 1 ?>">
+                    <a class="page-link"  href="http://localhost/SWIDDI/ControlUsuarios?pagina=<?= $i + 1 ?>">
                       <?= $i + 1 ?>
                     </a>
                   </li>
@@ -295,7 +295,7 @@ $paginas = ceil($p);
                 <?php endfor ?>
 
                 <li class="page-item <?= $_GET['pagina'] >= $paginas ? 'disabled' : '' ?>">
-                  <a class="page-link" style="background-color: #aa9f9d;" href="http://localhost/SWIDDI/ControlUsuarios?pagina=<?= $_GET['pagina'] + 1 ?>">
+                  <a class="page-link"  href="http://localhost/SWIDDI/ControlUsuarios?pagina=<?= $_GET['pagina'] + 1 ?>">
                     Next
                   </a>
                 </li>
