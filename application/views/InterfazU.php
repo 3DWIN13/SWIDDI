@@ -25,6 +25,9 @@ foreach ($datos['swiddi1'] as $key) {
   //var_dump($data);
   //var_dump($datos);
 }
+
+$configB;
+
 if (isset($_COOKIE["saladita"])) {
   $configA = $_COOKIE["saladita"];
 } else {
@@ -146,8 +149,8 @@ $paginas = ceil($p);
                 <li id="elvalor" name="elvalor" value="<?php $c = $key->Tables_in_swiddi1;
                                                         $c1 = trim($c, "'");
                                                         echo $c1; ?>"><a href="ControlPlantilla2?envio=<?php $c = $key->Tables_in_swiddi1;
-                                                                                                        $c1 = trim($c, "'");
-                                                                                                        echo $c1; ?>"><?php $c = $key->Tables_in_swiddi1;
+                                                                    $c1 = trim($c, "'");
+                                                                    echo $c1; ?>"><?php $c = $key->Tables_in_swiddi1;
                                                                                                                       $c1 = trim($c, "'");
                                                                                                                       echo $c1; ?></a></li>
               <?php endforeach ?>
@@ -188,7 +191,7 @@ $paginas = ceil($p);
       <form action="ControlPlantilla" method="post">
 
         <div class="col-sm-8" style="margin-left: 17%">
-        
+
           <?php
 
           /***************
@@ -211,9 +214,9 @@ $paginas = ceil($p);
 
           foreach ($ditis['swidi'] as $key) { ?>
 
-<table id="tabla" class="egt" style="width: 100%">
+            <table id="tabla" class="egt" style="width: 100%">
 
-            
+
               <br>
               <br>
 
@@ -222,6 +225,12 @@ $paginas = ceil($p);
                                                 echo $c1; ?></h2>
 
               <input type="hidden" name="cat" value="<?= $key->TABLE_NAME ?>">
+
+              
+              <a href="ControlPlantilla2?envio=<?php $c = $key->TABLE_NAME;
+                                                $c1 = trim($c, "'");
+                                                echo $c1; ?>" class="alert-link">more jobs</a>
+             
 
               <div class="container">
                 <div class="row align-items-center">
@@ -241,9 +250,17 @@ $paginas = ceil($p);
                   </tr>
 
 
-
                   <?php
-                  $data['objects'] = $this->Modelo->cargar2($key->TABLE_NAME);
+
+                  
+
+if (isset($_COOKIE["oreo"])) {
+  $configB = $_COOKIE["oreo"];
+} else {
+  $configB = 3;
+}
+
+                  $data['objects'] = $this->Modelo->cargar4($key->TABLE_NAME,$configB);
                   foreach ($data['objects'] as $key) {
 
                   ?>
@@ -267,8 +284,13 @@ $paginas = ceil($p);
 
 
 
+              
+
 
             <?php } ?>
+
+            
+           
           <?php } ?>
             </table>
 
@@ -287,7 +309,7 @@ $paginas = ceil($p);
                 <?php for ($i = 0; $i < $paginas; $i++) : ?>
 
                   <li class="page-item <?php echo $_GET['pagina'] == $i + 1 ? 'active' : '' ?>">
-                    <a class="page-link"  href="http://localhost/SWIDDI/ControlUsuarios?pagina=<?= $i + 1 ?>">
+                    <a class="page-link" href="http://localhost/SWIDDI/ControlUsuarios?pagina=<?= $i + 1 ?>">
                       <?= $i + 1 ?>
                     </a>
                   </li>
@@ -295,13 +317,14 @@ $paginas = ceil($p);
                 <?php endfor ?>
 
                 <li class="page-item <?= $_GET['pagina'] >= $paginas ? 'disabled' : '' ?>">
-                  <a class="page-link"  href="http://localhost/SWIDDI/ControlUsuarios?pagina=<?= $_GET['pagina'] + 1 ?>">
+                  <a class="page-link" href="http://localhost/SWIDDI/ControlUsuarios?pagina=<?= $_GET['pagina'] + 1 ?>">
                     Next
                   </a>
                 </li>
               </ul>
             </nav>
 
+            
 
             <!--==========================
   pagiinacion
