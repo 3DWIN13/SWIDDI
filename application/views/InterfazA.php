@@ -173,7 +173,7 @@ td{
   foreach ($datos['swiddi1'] as $key){ ?>
  
     
-    <table id="tabla" class="center" style="width: 98%">
+    <table id="tabla" class="center" style="width: 100%">
     <br>
     <br>
     <h2 style="text-align: center; "><?php $c= $key->Tables_in_swiddi1;$c1=trim($c,"'"); echo $c1; ?>  | <button value="<?=$key->Tables_in_swiddi1?>" type="submit" name="drop"><i class="fas fa-calendar-times"></i></button></h2> 
