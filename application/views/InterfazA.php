@@ -116,7 +116,7 @@ td{
   <br>
  <div class="col-md-6">
    <h3 style="margin-left:20%;"></h3> <br>
-  <input style="width: 30%;
+  <input style="width: 35%;
   margin-left:20%;
   padding: 10px;
   border: 2px solid black;
@@ -136,7 +136,7 @@ td{
   
    <div class="col-md-6">
    <h5 style="margin-left:20%;"></h5> <br>
-  <input style="width: 33%;
+  <input style="width: 38%;
   margin-left:20%;
   padding: 10px;
   border: 2px solid black;
